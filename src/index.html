@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script defer src="https://unpkg.com/swup@4"></script> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="overflow-scroll lg:overflow-hidden">
+    <header style="min-height: 10%;">
+
+        <nav class="flex-1 shadow">
+            <ul class="hidden md:grid grid-cols-5 grid-rows-1 text-center text-white uppercase">
+                <li class="">
+                    <a class="" href="/about.html">about</a>
+                </li>
+                <li class="">
+                    <a href="/gallery.html">gallery</a>
+                </li>
+                <li>
+                    <a href="/index.html">
+                        <img src="images/logo.png" height="69px" width="219px" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/menu.html">
+                        menu
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact.html">
+                        contact</a>
+                </li>
+            </ul>
+            <!-- mobile menu -->
+            <ul class="flex justify-between md:hidden ">
+                <li class="">
+                    <a href="/index.html">
+                        <img src="images/logo.png" height="69px" width="219px" alt="">
+                    </a>
+                </li>
+
+                <button class="mr-4" id="openMenuButton"
+                    class="text-gray-300 hover:bg-black hover:text-yellow-500 rounded-full">
+
+                    <span id="mobile-open" class="mobile-open">
+                        <img src="./images/hamburger.png" width="30" />
+                    </span>
+
+                    <span id="mobile-close" class="mobile-close">
+                        <img src="./images/close.png" width="30" />
+                    </span>
+                </button>
+
+            </ul>
+            <div id="mobile-menu-list" class="mobile-menu-list md:hidden">
+                <ul class="flex flex-col justify-center items-center text-white uppercase">
+                    <li class="">
+                        <a class="" href="/about.html">about</a>
+                    </li>
+                    <li class="">
+                        <a href="/gallery.html">gallery</a>
+                    </li>
+                    <li>
+                        <a href="/menu.html">
+                            menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">
+                            contact</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">
+                            book now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <section class="top-section relative">
+
+<span class="wave-top">
+    <img src="./images/waves.png" alt="waves" class="   ">
+</span>
+            <div class="font-semibold pb-8 pt-4 text-white md:pb-[1.1rem] md:pt-[4.1rem] md:px-[7.1rem] lh-tight">
+                <span class="grillin grillin-drink relative">Grillin</span> and
+                <div class="relative inline-block">
+                    <span class="grillin grillin-ticket relative">Chillin</span>
+                </div>
+                on
+                the Lake
+            </div>
+
+            <!-- <img src="./images/drink.svg" alt="drink icon" class="absolute top-[16%] left-[18%]" />
+                <img src="./images/ticket.svg" alt="drink icon" class="absolute top-[23%] right-[17%]" /> -->
+
+        </section>
+
+        <section class=" pt-4 mx-3 md:mx-auto  md:max-w-screen-xl flex flex-col md:flex-row justify-around items-center gap-y-[2.5rem] md:gap-y-0 relative">
+
+            <div class="figure-cards order-2 md:order-1" >
+                <a href="./faq.html" class="checkout-box glass-bg">
+                    <figcaption class="p-4">
+                        <div class="checkout-title pb-1">
+                            Checkout Some of Our FAQs below
+                        </div>
+                        <div class="checkout-subtitle flex justify-between">
+                            <p>Checkout Some of Our FAQs below</p>
+                            <span class="bg-gradient rounded-full p-1">
+                                <img src="./images/arrow-right-black.svg" alt="arrow-right" />
+                            </span>
+                        </div>
+                    </figcaption>
+                </a>
+
+
+
+                <figure class="home-gallery flex justify-around items-center ">
+
+                    <img src="./images/home-gallery-img.jpeg" class="home-gallery-img ml-3" alt="home-gallery">
+                    <div class="pt-4 md:p-4 text-left space-y-4">
+
+                        <figcaption class="gallery-caption">
+                            <h4 class="">
+                                Explore our gallery
+                            </h4>
+
+                            <p class="">
+                                The perfect combo for unforgetable fun
+                            </p>
+
+                            <div>
+                                <a href="./gallery.html">View More</a>
+                                <img src="./images/arrow-right.svg" alt="right-arrow" />
+                            </div>
+
+                        </figcaption>
+                    </div>
+
+                </figure>
+            </div>
+
+            <div class="flex justify-between gap-x-[2.5rem] order-1 md:order-2 " >
+                <a href="#" class="card-link slant-right text-white ">
+                    <p class="card-link__title">from</p>
+                    <h4>$150</h4>
+                    <h3>Experience our BBQ boat cruise</h3>
+                    <span class="bg-gradient rounded-full p-1">
+                        <img src="./images/next.svg" alt="next" />
+                    </span>
+
+                </a>
+
+                <a href="#" class="card-link slant-left">
+                    <img src="./images/testimonial.png" alt="next" class="pt-3" />
+                    <img src="./images/star.svg" alt="star" class=" testimonial-star" />
+
+
+                    <div class=" text-center pb-8">
+
+                        <h4 class="card-link__exp">Best experience of my life</h4>
+
+                        <p class="card-link__name">Kate Williams</p>
+
+                        <p class="underline inline-block text-[13px]">Read more</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <span class="wave-bottom">
+            <img src="./images/waves.png" alt="waves" class="">
+        </span>
+
+        <section class="max-w-screen-md  flex justify-center mx-auto mt-8 p-8">
+            <a class="book-button bg-cabana-orange" href="#">
+                Book Now
+                <img src="./images/arrow-right-white.svg" alt="arrow" class="animate-shake" />
+
+            </a>
+        </section>
+
+    </main>
+
+    <script src="./scripts/swup.js"></script>
+    <script>
+        const swup = new Swup();
+    </script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
