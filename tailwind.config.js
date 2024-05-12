@@ -1,37 +1,29 @@
+/** @type {import('tailwindcss').Config}*/
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  darkMode: "class",
+  content: ["./build/*.html", "./build/js/*.js"],
   theme: {
-    theme: {
-      fontSize: {
-        xs: ["12px", "16px"],
-        sm: ["14px", "20px"],
-        base: ["16px", "19.5px"],
-        lg: ["18px", "21.94px"],
-        xl: ["20px", "24.38px"],
-        "2xl": ["24px", "29.26px"],
-        "3xl": ["28px", "50px"],
-        "4xl": ["48px", "58px"],
-        "8xl": ["96px", "106px"],
+    extend: {
+      colors: {
+        papayawhip: {
+          light: "#fef4e4",
+          DEFAULT: "#ffefd5",
+          dark: "#fee5bc",
+        },
       },
-      extend: {
-        fontFamily: {
-          palanquin: ["Palanquin", "sans-serif"],
-          montserrat: ["Montserrat", "sans-serif"],
+      screens: {
+        widescreen: { raw: "(min-aspect-ratio: 3/2)" },
+        tallscreen: { raw: "(max-aspect-ratio: 13/20)" },
+      },
+      keyframes: {
+        "open-menu": {
+          "0%": { transform: "scaleY(0)" },
+          "8%": { transform: "scaleY(1.2)" },
+          "100%": { transform: "scaleY(1)" },
         },
-        colors: {
-          "brand-color": "#03B9C5",
-          "coral-orange": "#F24922",
-          "primary-blur": "#C5C5C5",
-          "star-yellow": "#FFC722",
-          "cubana-active": "#003362",
-          // "white-400": "rgba(255, 255, 255, 0.80)",
-        },
-        boxShadow: {
-          "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
-        },
-        screens: {
-          wide: "1440px",
-        },
+      },
+      animation: {
+        "open-menu": "open-menu 0.5s ease-in-out forwards",
       },
     },
   },

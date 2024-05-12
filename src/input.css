@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities{
+    .section-min-height{
+        min-height: calc(100vh - 10%);
+    }
+
+    .toggle-btn{
+        @apply [&>div::before]:translate-y-0  [&>div::before]:rotate-45 [&>div::after]:translate-y-0  [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    }
+}
+
 @font-face {
   font-family: "Satoshi-Light";
   src: url("./fonts/Satoshi-Light.woff2") format("woff2"),
@@ -210,14 +221,14 @@ nav > ul > li a img {
 /* main */
 
 .main-container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100vw;
   background-image: linear-gradient(
       176deg,
       rgba(0, 0, 0, 0.5) 0%,
       rgb(86 74 74 / 50%) 100%
     ),
-    url("./images/header-bg.png");
+    url("../images/header-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -229,7 +240,7 @@ nav > ul > li a img {
 }
 
 span.grillin-drink::before {
-  content: url("./images/drink.svg");
+  content: url("../images/drink.svg");
   position: absolute;
   left: -123px;
   top: -53px;
@@ -242,7 +253,7 @@ span.grillin-drink::before {
 }
 
 span.grillin-ticket::before {
-  content: url("./images/ticket.svg");
+  content: url("../images/ticket.svg");
   position: absolute;
   right: -136px;
   top: -15px;
@@ -461,7 +472,7 @@ h4.card-link__exp {
 /* hide the wave on over for the 3rd li */
 @media only screen and (min-width: 768px) {
   nav li:not(:nth-child(3)) a::after {
-    content: url("./images/wave-one.png");
+    content: url("../images/wave-one.png");
     position: absolute;
     left: 0;
     bottom: 31px;
@@ -512,7 +523,7 @@ h4.card-link__exp {
   }
 
   span.grillin-drink::before {
-    content: url("./images/drink-small.svg");
+    content: url("../images/drink-small.svg");
     position: absolute;
     left: -59px;
     top: -19px;
@@ -529,7 +540,7 @@ h4.card-link__exp {
   }
 
   span.grillin-ticket::before {
-    content: url("./images/ticket-small.svg");
+    content: url("../images/ticket-small.svg");
     position: absolute;
     right: -66px;
     top: -6px;
@@ -556,7 +567,59 @@ h4.card-link__exp {
 
   .wave-bottom {
     position: absolute;
-    bottom: -15%;
+    bottom: 5%;
     left: -80px;
   }
+}
+
+
+/* specifically for iphone 14pro max */
+@media screen and (min-width: 426px) and (max-width: 431px) {
+ 
+  span.grillin-drink::before {
+    content: url("../images/drink-small.svg");
+    position: absolute;
+    left: -61px;
+    top: -42px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    z-index: 1;
+
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+  }
+
+  span.grillin-ticket::before {
+    content: url("../images/ticket-small.svg");
+    position: absolute;
+    right: -66px;
+    top: -31px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+  }
+
+ 
+  .wave-top {
+    position: absolute;
+    top: 8px;
+    right: -14%;
+  }
+  .wave-top img,
+  .wave-bottom img {
+    height: 30px;
+  }
+
+  .wave-bottom {
+    position: absolute;
+    bottom: 5%;
+    left: -80px;
+  }
+
 }
