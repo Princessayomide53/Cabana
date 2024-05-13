@@ -27,12 +27,14 @@ var navClose = document.getElementById("mobile-close");
 var mobileContainer = document.getElementById("mobile-menu-list");
 
 function openNav() {
-  mobileContainer.style.display = "block";
+  mobileContainer.style.display = "flex";
+  document.body.style.position = "fixed";
   navClose.style.display = "block";
   navOpen.style.display = "none";
 }
 function closeNav() {
   mobileContainer.style.display = "none";
+  document.body.style.position = "";
   navClose.style.display = "none";
   navOpen.style.display = "block";
 }

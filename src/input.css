@@ -79,7 +79,7 @@
 }
 
 body {
-  font-family: "kumbh sans", "sans serif";
+  font-family: "kumbh sans","Satoshi-Regular", "sans serif";
   overflow: hidden;
 }
 
@@ -221,7 +221,7 @@ nav > ul > li a img {
 /* main */
 
 .main-container {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   width: 100vw;
   background-image: linear-gradient(
       176deg,
@@ -518,6 +518,9 @@ h4.card-link__exp {
 }
 
 @media screen and (max-width: 425px) {
+  body{
+    overflow: auto;
+  }
   nav li:first-child a:hover {
     background-color: #03b9c5;
   }
@@ -567,7 +570,7 @@ h4.card-link__exp {
 
   .wave-bottom {
     position: absolute;
-    bottom: 5%;
+    bottom: -12%;
     left: -80px;
   }
 }

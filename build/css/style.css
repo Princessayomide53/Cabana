@@ -562,6 +562,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .left-\[18\%\] {
   left: 18%;
 }
@@ -576,6 +580,14 @@ video {
 
 .top-\[23\%\] {
   top: 23%;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .order-1 {
@@ -620,12 +632,42 @@ video {
   display: none;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .max-w-screen-md {
   max-width: 768px;
 }
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+@keyframes open-menu {
+  0% {
+    transform: scaleY(0);
+  }
+
+  8% {
+    transform: scaleY(1.2);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-open-menu {
+  animation: open-menu 0.5s ease-in-out forwards;
 }
 
 .grid-cols-5 {
@@ -671,12 +713,17 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.overflow-scroll {
-  overflow: scroll;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.bg-\[\#03b9c5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 185 197 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -715,6 +762,11 @@ video {
   text-align: center;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-\[13px\] {
   font-size: 13px;
 }
@@ -739,12 +791,6 @@ video {
 
 .underline {
   text-decoration-line: underline;
-}
-
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @font-face {
@@ -863,7 +909,7 @@ video {
 }
 
 body {
-  font-family: "kumbh sans", "sans serif";
+  font-family: "kumbh sans","Satoshi-Regular", "sans serif";
   overflow: hidden;
 }
 
@@ -1004,7 +1050,7 @@ nav > ul > li a img {
 /* main */
 
 .main-container {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   width: 100vw;
   background-image: linear-gradient(
       176deg,
@@ -1365,6 +1411,10 @@ h4.card-link__exp {
 }
 
 @media screen and (max-width: 425px) {
+  body{
+    overflow: auto;
+  }
+
   nav li:first-child a:hover {
     background-color: #03b9c5;
   }
@@ -1414,7 +1464,7 @@ h4.card-link__exp {
 
   .wave-bottom {
     position: absolute;
-    bottom: 5%;
+    bottom: -12%;
     left: -80px;
   }
 }
@@ -1527,18 +1577,6 @@ h4.card-link__exp {
 
   .md\:pt-\[4\.1rem\] {
     padding-top: 4.1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:overflow-hidden {
-    overflow: hidden;
-  }
-}
-
-@media (min-aspect-ratio: 3/2) {
-  .widescreen\:section-min-height{
-    min-height: calc(100vh - 10%);
   }
 }
 
