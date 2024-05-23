@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-hidden">
+    <header style="min-height: 10%" class="sticky top-0 z-10">
+      <nav class="flex-1 relative">
+        <span
+          class="flex justify-between mac:max-w-[83rem] md:max-w-[45rem] xl:max-w-[75rem] lg:max-w-[60rem] mx-auto"
+        >
+          <a href="index.html">
+            <img
+              src="images/logo.png"
+              alt=""
+              class="py-[10px] hidden md:flex md:w-[120px] md:h-[62px] lg:w-[180px] lg:h-[69px]"
+            />
+          </a>
+          <ul
+            class="hidden md:grid md:gap-[1.5rem] lg:gap-[4rem] xl:gap-[6rem] mac:gap-[8rem] grid-cols-4 grid-rows-1 overflow-hidden place-items-center text-center text-white uppercase"
+          >
+            <li class="">
+              <a class="" href="about.html">about</a>
+            </li>
+            <li class="">
+              <a href="gallery.html">gallery</a>
+            </li>
+
+            <li>
+              <a href="menu.html"> menu </a>
+            </li>
+            <li>
+              <a href="contact.html"> contact</a>
+            </li>
+          </ul>
+
+          <div class="justify-center items-center hidden md:flex">
+            <button
+              class="rounded-full text-white px-7 py-2 flex justify-self-center bg-cabana-orange"
+            >
+              Book Now
+            </button>
+          </div>
+        </span>
+        <!-- <ul
+        class="hidden md:grid grid-cols-5 grid-rows-1 overflow-hidden text-center text-white uppercase"
+      >
+        <li class="">
+          <a class="" href="/about.html">about</a>
+        </li>
+        <li class="">
+          <a href="gallery.html">gallery</a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img src="images/logo.png" height="69px" width="219px" alt="" />
+          </a>
+        </li>
+
+        <li>
+          <a href="/menu.html"> menu </a>
+        </li>
+        <li>
+          <a href="contact.html"> contact</a>
+        </li>
+      </ul> -->
+        <!-- mobile menu -->
+        <ul class="flex justify-between md:hidden">
+          <li class="">
+            <a href="/index.html">
+              <img src="images/logo.png" height="69px" width="219px" alt="" />
+            </a>
+          </li>
+
+          <button
+            class="mr-4"
+            id="openMenuButton"
+            class="text-gray-300 hover:bg-black hover:text-yellow-500 rounded-full"
+          >
+            <span id="mobile-open" class="mobile-open">
+              <img src="./images/hamburger.png" width="30" />
+            </span>
+
+            <span id="mobile-close" class="mobile-close">
+              <img src="./images/close.png" width="30" />
+            </span>
+          </button>
+        </ul>
+        <div
+          id="mobile-menu-list"
+          class="mobile-menu-list md:hidden absolute text-3xl bg-[#03b9c5] w-full z-10 flex items-center origin-start h-[100vh] justify-center center overflow-hidden"
+        >
+          <ul
+            class="flex flex-col justify-center items-center text-white uppercase animate-open-menu w-full h-full"
+          >
+            <li class="">
+              <a class="" href="about.html">about</a>
+            </li>
+            <li class="">
+              <a href="gallery.html">gallery</a>
+            </li>
+            <li>
+              <a href="menu.html"> menu </a>
+            </li>
+            <li>
+              <a href="contact.html"> contact</a>
+            </li>
+            <li>
+              <a href="contact.html"> book now</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-[#E7FEFF] overflow-y-scroll h-screen overflow-x-hidden">
+      <section class="top-section relative">
+        <span class="wave-top">
+          <img src="./images/waves.png" alt="waves" class="   " />
+        </span>
+
+        <div class="relative">
+          <img
+            src="./images/drink-small.svg"
+            alt="grillin-drink"
+            class="absolute left-[5.1rem] top-1 md:left-[16rem] lg:left-[19.2rem] md:top-14 xl:left-[26.5rem] xl:top-12"
+          />
+          <span
+            class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+            >MENU</span
+          >
+          <img
+            src="./images/ticket-small.svg"
+            alt="grillin-ticket"
+            class="absolute right-[5rem] top-1 md:right-[16rem] lg:right-[19rem] md:top-14 xl:right-[26rem] xl:top-12"
+          />
+          <p
+            class="text-[#293D4E] mt-2 px-3 md:px-0 md:-mt-[12px] text-center font-medium leading-normal text-sm lg:text-lg"
+          >
+            Lorem ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu Lorem<br class="hidden md:block" />
+            ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu donec.
+          </p>
+        </div>
+      </section>
+      <span
+        class="mac:max-w-[80rem] xl:max-w-[73rem] max-w-[21.7rem] lg:max-w-[58rem] md:max-w-[45rem] grid grid-cols-1 md:grid-cols-2 gap-x-[20px] lg:gap-x-[24px] gap-7 md:gap-y-[33px] xl:gap-[28px] mac:gap-[33px] pb-[35px] mx-auto pt-[63px]"
+      >
+        <div
+          class="bg-white w-full rounded-xl h-[235px] md:w-[350px] lg:w-[450px] xl:w-[550px] mac:w-[630px] md:h-[220px] mac:h-[236px] px-[14px] md:px-[18px] lg:px-[24px] py-[25px] flex gap-[20px] mac:gap-[28px]"
+        >
+          <img
+            src="./images/menu.png"
+            alt="menu"
+            class="lg:h-[10.5rem] w-[7rem] h-[11.5rem] md:h-[11rem] md:w-[6rem] lg:w-[7.8rem] mac:h-auto xl:w-auto"
+          />
+          <span class>
+            <h5
+              class="text-[#003362] text-[13px] md:text-[12px] lg:text-[14.3px] xl:text-[16.5px] mac:text-xl leading-normal font-bold uppercase"
+            >
+              Lorem ipsum dolor sit amet
+              <br class="hidden lg:block" />consectetur. Etiam massa cras
+            </h5>
+
+            <p
+              class="text-[#293D4E] text-[11px] lg:text-sm mac:text-lg font-medium leading-normal pt-[15px]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu
+            </p>
+            <span class="flex justify-between pt-[28px]">
+              <p
+                class="text-[#003362] pt-2 lg:pt-0 text-sm lg:text-base xl:text-xl font-bold leading-normal uppercase"
+              >
+                $352
+              </p>
+
+              <button
+                class="bg-[#003362] text-white text-xs lg:text-sm xl:text-base font-semibold leading-normal px-5 py-2 rounded-xl -tracking-[0.36px]"
+              >
+                Book Now
+              </button>
+            </span>
+          </span>
+        </div>
+
+        <div
+          class="bg-white w-full rounded-xl h-[235px] md:w-[350px] lg:w-[450px] xl:w-[550px] mac:w-[630px] md:h-[220px] mac:h-[236px] px-[14px] md:px-[18px] lg:px-[24px] py-[25px] flex gap-[20px] mac:gap-[28px]"
+        >
+          <img
+            src="./images/menu.png"
+            alt="menu"
+            class="lg:h-[10.5rem] w-[7rem] h-[11.5rem] md:h-[11rem] md:w-[6rem] lg:w-[7.8rem] mac:h-auto xl:w-auto"
+          />
+          <span class>
+            <h5
+              class="text-[#003362] text-[13px] md:text-[12px] lg:text-[14.3px] xl:text-[16.5px] mac:text-xl leading-normal font-bold uppercase"
+            >
+              Lorem ipsum dolor sit amet
+              <br class="hidden lg:block" />consectetur. Etiam massa cras
+            </h5>
+
+            <p
+              class="text-[#293D4E] text-[11px] lg:text-sm mac:text-lg font-medium leading-normal pt-[15px]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu
+            </p>
+            <span class="flex justify-between pt-[28px]">
+              <p
+                class="text-[#003362] pt-2 lg:pt-0 text-sm lg:text-base xl:text-xl font-bold leading-normal uppercase"
+              >
+                $352
+              </p>
+
+              <button
+                class="bg-[#003362] text-white text-xs lg:text-sm xl:text-base font-semibold leading-normal px-5 py-2 rounded-xl -tracking-[0.36px]"
+              >
+                Book Now
+              </button>
+            </span>
+          </span>
+        </div>
+
+        <div
+          class="bg-white w-full rounded-xl h-[235px] md:w-[350px] lg:w-[450px] xl:w-[550px] mac:w-[630px] md:h-[220px] mac:h-[236px] px-[14px] md:px-[18px] lg:px-[24px] py-[25px] flex gap-[20px] mac:gap-[28px]"
+        >
+          <img
+            src="./images/menu.png"
+            alt="menu"
+            class="lg:h-[10.5rem] w-[7rem] h-[11.5rem] md:h-[11rem] md:w-[6rem] lg:w-[7.8rem] mac:h-auto xl:w-auto"
+          />
+          <span class>
+            <h5
+              class="text-[#003362] text-[13px] md:text-[12px] lg:text-[14.3px] xl:text-[16.5px] mac:text-xl leading-normal font-bold uppercase"
+            >
+              Lorem ipsum dolor sit amet
+              <br class="hidden lg:block" />consectetur. Etiam massa cras
+            </h5>
+
+            <p
+              class="text-[#293D4E] text-[11px] lg:text-sm mac:text-lg font-medium leading-normal pt-[15px]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu
+            </p>
+            <span class="flex justify-between pt-[28px]">
+              <p
+                class="text-[#003362] pt-2 lg:pt-0 text-sm lg:text-base xl:text-xl font-bold leading-normal uppercase"
+              >
+                $352
+              </p>
+
+              <button
+                class="bg-[#003362] text-white text-xs lg:text-sm xl:text-base font-semibold leading-normal px-5 py-2 rounded-xl -tracking-[0.36px]"
+              >
+                Book Now
+              </button>
+            </span>
+          </span>
+        </div>
+        <div
+          class="bg-white w-full rounded-xl h-[235px] md:w-[350px] lg:w-[450px] xl:w-[550px] mac:w-[630px] md:h-[220px] mac:h-[236px] px-[14px] md:px-[18px] lg:px-[24px] py-[25px] flex gap-[20px] mac:gap-[28px]"
+        >
+          <img
+            src="./images/menu.png"
+            alt="menu"
+            class="lg:h-[10.5rem] w-[7rem] h-[11.5rem] md:h-[11rem] md:w-[6rem] lg:w-[7.8rem] mac:h-auto xl:w-auto"
+          />
+          <span class>
+            <h5
+              class="text-[#003362] text-[13px] md:text-[12px] lg:text-[14.3px] xl:text-[16.5px] mac:text-xl leading-normal font-bold uppercase"
+            >
+              Lorem ipsum dolor sit amet
+              <br class="hidden lg:block" />consectetur. Etiam massa cras
+            </h5>
+
+            <p
+              class="text-[#293D4E] text-[11px] lg:text-sm mac:text-lg font-medium leading-normal pt-[15px]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu
+            </p>
+            <span class="flex justify-between pt-[28px]">
+              <p
+                class="text-[#003362] pt-2 lg:pt-0 text-sm lg:text-base xl:text-xl font-bold leading-normal uppercase"
+              >
+                $352
+              </p>
+
+              <button
+                class="bg-[#003362] text-white text-xs lg:text-sm xl:text-base font-semibold leading-normal px-5 py-2 rounded-xl -tracking-[0.36px]"
+              >
+                Book Now
+              </button>
+            </span>
+          </span>
+        </div>
+      </span>
+      <!-- <span class="wave-bottom mt-10">
+        <img src="./images/waves.png" alt="waves" class="" />
+      </span> -->
+    </main>
+  </body>
+</html>
