@@ -2,62 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .section-min-height {
+    min-height: calc(100vh - 10%);
+  }
 
-@layer utilities{
-    .section-min-height{
-        min-height: calc(100vh - 10%);
-    }
-
-    .toggle-btn{
-        @apply [&>div::before]:translate-y-0  [&>div::before]:rotate-45 [&>div::after]:translate-y-0  [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
-    }
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0  [&>div::before]:rotate-45 [&>div::after]:translate-y-0  [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg];
+  }
 }
 
 @font-face {
-  font-family: "Satoshi-Light";
-  src: url("./fonts/Satoshi-Light.woff2") format("woff2"),
-    url("./fonts/Satoshi-Light.woff") format("woff"),
-    url("./fonts/Satoshi-Light.ttf") format("truetype");
+  font-family: 'Satoshi-Light';
+  src: url('./fonts/Satoshi-Light.woff2') format('woff2'),
+    url('./fonts/Satoshi-Light.woff') format('woff'),
+    url('./fonts/Satoshi-Light.ttf') format('truetype');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Satoshi-Regular";
-  src: url("./fonts/Satoshi-Regular.woff2") format("woff2"),
-    url("./fonts/Satoshi-Regular.woff") format("woff"),
-    url("./fonts/Satoshi-Regular.ttf") format("truetype");
+  font-family: 'Satoshi-Regular';
+  src: url('./fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('./fonts/Satoshi-Regular.woff') format('woff'),
+    url('./fonts/Satoshi-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Satoshi-Medium";
-  src: url("./fonts/Satoshi-Medium.woff2") format("woff2"),
-    url("./fonts/Satoshi-Medium.woff") format("woff"),
-    url("./fonts/Satoshi-Medium.ttf") format("truetype");
+  font-family: 'Satoshi-Medium';
+  src: url('./fonts/Satoshi-Medium.woff2') format('woff2'),
+    url('./fonts/Satoshi-Medium.woff') format('woff'),
+    url('./fonts/Satoshi-Medium.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Satoshi-Bold";
-  src: url("./fonts/Satoshi-Bold.woff2") format("woff2"),
-    url("./fonts/Satoshi-Bold.woff") format("woff"),
-    url("./fonts/Satoshi-Bold.ttf") format("truetype");
+  font-family: 'Satoshi-Bold';
+  src: url('./fonts/Satoshi-Bold.woff2') format('woff2'),
+    url('./fonts/Satoshi-Bold.woff') format('woff'),
+    url('./fonts/Satoshi-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Satoshi-Black";
-  src: url("./fonts/Satoshi-Black.woff2") format("woff2"),
-    url("./fonts/Satoshi-Black.woff") format("woff"),
-    url("./fonts/Satoshi-Black.ttf") format("truetype");
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-Black.woff2') format('woff2'),
+    url('./fonts/Satoshi-Black.woff') format('woff'),
+    url('./fonts/Satoshi-Black.ttf') format('truetype');
   font-weight: 900;
   font-display: swap;
   font-style: normal;
@@ -79,7 +78,7 @@
 }
 
 body {
-  font-family: "kumbh sans","Satoshi-Regular", "sans serif";
+  font-family: 'kumbh sans', 'Satoshi-Regular', 'sans serif';
   overflow: hidden;
 }
 
@@ -106,9 +105,14 @@ nav li {
   position: relative;
 }
 
+.font {
+  font-family: 'kumbh sans';
+  overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
   nav li a::after {
-    content: url("./images/wave-one.png");
+    content: url('./images/wave-one.png');
     position: absolute;
     left: 0;
     bottom: 31px;
@@ -228,7 +232,7 @@ nav > ul > li a img {
       rgba(0, 0, 0, 0.5) 0%,
       rgb(86 74 74 / 50%) 100%
     ),
-    url("../images/header-bg.png");
+    url('../images/header-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -240,7 +244,7 @@ nav > ul > li a img {
 }
 
 span.grillin-drink::before {
-  content: url("../images/drink.svg");
+  content: url('../images/drink.svg');
   position: absolute;
   left: -123px;
   top: -53px;
@@ -253,7 +257,7 @@ span.grillin-drink::before {
 }
 
 span.grillin-ticket::before {
-  content: url("../images/ticket.svg");
+  content: url('../images/ticket.svg');
   position: absolute;
   right: -136px;
   top: -15px;
@@ -292,7 +296,7 @@ span.grillin-ticket::before {
 
 .checkout-title {
   color: #fff;
-  font-family: "Satoshi-regular" !important;
+  font-family: 'Satoshi-regular' !important;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -301,7 +305,7 @@ span.grillin-ticket::before {
 
 .checkout-subtitle {
   color: #fff;
-  font-family: "Satoshi-Light" !important;
+  font-family: 'Satoshi-Light' !important;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -321,7 +325,7 @@ span.grillin-ticket::before {
 }
 
 .gallery-caption h4 {
-  font-family: "Satoshi-bold";
+  font-family: 'Satoshi-bold';
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -329,7 +333,7 @@ span.grillin-ticket::before {
 }
 
 .gallery-caption p {
-  font-family: "Satoshi-medium";
+  font-family: 'Satoshi-medium';
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -354,12 +358,12 @@ span.grillin-ticket::before {
 }
 
 .card-link h4 {
-  font-family: "Satoshi-medium";
+  font-family: 'Satoshi-medium';
   font-size: 40px;
 }
 
 .card-link h3 {
-  font-family: "Satoshi-medium";
+  font-family: 'Satoshi-medium';
   font-size: 14px;
   text-align: center;
 }
@@ -375,7 +379,7 @@ h4.card-link__exp {
   text-align: center;
   /* transform: rotate(-12.305deg); */
   font-weight: 400px;
-  font-family: "Satoshi-medium";
+  font-family: 'Satoshi-medium';
 }
 .testimonial-image {
   transform: rotate(14deg);
@@ -394,7 +398,7 @@ h4.card-link__exp {
   text-align: center;
   /* transform: rotate(-12.305deg); */
   font-weight: 400px;
-  font-family: "Satoshi-medium";
+  font-family: 'Satoshi-medium';
 }
 .slant-right {
   transform: rotate(15.679deg);
@@ -472,7 +476,7 @@ h4.card-link__exp {
 /* hide the wave on over for the 3rd li */
 @media only screen and (min-width: 768px) {
   nav li:not(:nth-child(3)) a::after {
-    content: url("../images/wave-one.png");
+    content: url('../images/wave-one.png');
     position: absolute;
     left: 0;
     bottom: 31px;
@@ -500,7 +504,7 @@ h4.card-link__exp {
 }
 
 @media only screen and (max-width: 768px) {
-      nav li a:hover::after {
+  nav li a:hover::after {
     z-index: 1;
   }
 
@@ -514,11 +518,10 @@ h4.card-link__exp {
     position: absolute;
     bottom: -12%;
   }
-
 }
 
 @media screen and (max-width: 425px) {
-  body{
+  body {
     overflow: auto;
   }
   nav li:first-child a:hover {
@@ -526,7 +529,7 @@ h4.card-link__exp {
   }
 
   span.grillin-drink::before {
-    content: url("../images/drink-small.svg");
+    content: url('../images/drink-small.svg');
     position: absolute;
     left: -59px;
     top: -19px;
@@ -543,7 +546,7 @@ h4.card-link__exp {
   }
 
   span.grillin-ticket::before {
-    content: url("../images/ticket-small.svg");
+    content: url('../images/ticket-small.svg');
     position: absolute;
     right: -66px;
     top: -6px;
@@ -575,12 +578,10 @@ h4.card-link__exp {
   }
 }
 
-
 /* specifically for iphone 14pro max */
 @media screen and (min-width: 426px) and (max-width: 431px) {
- 
   span.grillin-drink::before {
-    content: url("../images/drink-small.svg");
+    content: url('../images/drink-small.svg');
     position: absolute;
     left: -61px;
     top: -42px;
@@ -597,7 +598,7 @@ h4.card-link__exp {
   }
 
   span.grillin-ticket::before {
-    content: url("../images/ticket-small.svg");
+    content: url('../images/ticket-small.svg');
     position: absolute;
     right: -66px;
     top: -31px;
@@ -608,7 +609,6 @@ h4.card-link__exp {
     transition: background-color 0.3s ease;
   }
 
- 
   .wave-top {
     position: absolute;
     top: 8px;
@@ -624,5 +624,4 @@ h4.card-link__exp {
     bottom: 5%;
     left: -80px;
   }
-
 }
