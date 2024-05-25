@@ -110,7 +110,7 @@ nav li {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   nav li a::after {
     content: url('./images/wave-one.png');
     position: absolute;
@@ -123,11 +123,11 @@ nav li {
 
     transition: background-color 0.3s ease;
   }
-}
+} */
 
 nav li a:hover::after {
   /* animation: wave 1s infinite; */
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 nav li a:hover {
@@ -474,7 +474,8 @@ h4.card-link__exp {
 /* Media Queries */
 
 /* hide the wave on over for the 3rd li */
-@media only screen and (min-width: 768px) {
+
+/* @media only screen and (min-width: 768px) {
   nav li:not(:nth-child(3)) a::after {
     content: url('../images/wave-one.png');
     position: absolute;
@@ -486,7 +487,7 @@ h4.card-link__exp {
     z-index: -1;
 
     transition: background-color 0.3s ease;
-  }
+  } */
 
   nav li a:hover::after {
     z-index: 1;
@@ -501,12 +502,13 @@ h4.card-link__exp {
     position: absolute;
     bottom: -12%;
   } */
-}
+/* } */
 
 @media only screen and (max-width: 768px) {
-  nav li a:hover::after {
+ 
+  /* nav li a:hover::after {
     z-index: 1;
-  }
+  } */
 
   .wave-top {
     position: absolute;
