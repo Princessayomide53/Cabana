@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header style="min-height: 13%" class="sticky top-0 z-10">
+      <nav class="flex-1 relative">
+        <span
+          class="flex justify-between mac:max-w-[83rem] md:max-w-[43rem] xl:max-w-[75rem] lg:max-w-[60rem] mx-auto"
+        >
+          <a href="index.html">
+            <img
+              src="images/logo.png"
+              alt=""
+              class="py-[10px] md:w-[120px] md:h-[62px] lg:w-[180px] lg:h-[69px] hidden md:flex"
+            />
+          </a>
+          <ul
+            class="hidden md:grid md:gap-[1.5rem] lg:gap-[4rem] xl:gap-[6rem] mac:gap-[8rem] grid-cols-4 grid-rows-1 overflow-hidden place-items-center text-center text-white uppercase"
+          >
+            <li class="">
+              <a class="" href="about.html">about</a>
+            </li>
+            <li class="">
+              <a href="gallery.html">gallery</a>
+            </li>
+
+            <li>
+              <a href="menu.html"> menu </a>
+            </li>
+            <li>
+              <a href="contact.html"> contact</a>
+            </li>
+          </ul>
+
+          <div class="justify-center items-center hidden md:flex">
+            <button
+              class="rounded-full text-white px-7 py-2 flex justify-self-center bg-cabana-orange"
+            >
+              Book Now
+            </button>
+          </div>
+        </span>
+        <!-- <ul
+          class="hidden md:grid grid-cols-5 grid-rows-1 overflow-hidden text-center text-white uppercase"
+        >
+          <li class="">
+            <a class="" href="/about.html">about</a>
+          </li>
+          <li class="">
+            <a href="gallery.html">gallery</a>
+          </li>
+          <li>
+            <a href="index.html">
+              <img src="images/logo.png" height="69px" width="219px" alt="" />
+            </a>
+          </li>
+
+          <li>
+            <a href="/menu.html"> menu </a>
+          </li>
+          <li>
+            <a href="contact.html"> contact</a>
+          </li>
+        </ul> -->
+        <!-- mobile menu -->
+        <ul class="flex justify-between md:hidden">
+          <li class="">
+            <a href="/index.html">
+              <img src="images/logo.png" height="69px" width="219px" alt="" />
+            </a>
+          </li>
+
+          <button
+            class="mr-4"
+            id="openMenuButton"
+            class="text-gray-300 hover:bg-black hover:text-yellow-500 rounded-full"
+          >
+            <span id="mobile-open" class="mobile-open">
+              <img src="./images/hamburger.png" width="30" />
+            </span>
+
+            <span id="mobile-close" class="mobile-close">
+              <img src="./images/close.png" width="30" />
+            </span>
+          </button>
+        </ul>
+        <div
+          id="mobile-menu-list"
+          class="mobile-menu-list md:hidden absolute text-3xl bg-[#03b9c5] w-full z-10 flex items-center origin-start h-[100vh] justify-center center overflow-hidden"
+        >
+          <ul
+            class="flex flex-col justify-center items-center text-white uppercase animate-open-menu"
+          >
+            <li class="">
+              <a class="" href="about.html">about</a>
+            </li>
+            <li class="">
+              <a href="gallery.html">gallery</a>
+            </li>
+            <li>
+              <a href="menu.html"> menu </a>
+            </li>
+            <li>
+              <a href="contact.html"> contact</a>
+            </li>
+            <li>
+              <a href="contact.html"> book now</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-[#E7FEFF] overflow-y-scroll h-screen overflow-x-hidden">
+      <section class="top-section relative">
+        <span class="wave-top">
+          <img src="./images/waves.png" alt="waves" class="   " />
+        </span>
+
+        <div class="relative">
+          <img
+            src="./images/drink-small.svg"
+            alt="grillin-drink"
+            class="absolute left-[5.1rem] top-1 md:left-[16rem] lg:left-[19.2rem] md:top-14 xl:left-[26.5rem] xl:top-12"
+          />
+          <span
+            class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+            >Gallery</span
+          >
+          <img
+            src="./images/ticket-small.svg"
+            alt="grillin-ticket"
+            class="absolute right-[5rem] top-1 md:right-[16rem] lg:right-[19rem] md:top-14 xl:right-[26rem] xl:top-12"
+          />
+          <p
+            class="text-[#293D4E] mt-2 px-3 md:px-0 md:-mt-[16px] text-center font-medium leading-normal text-sm lg:text-lg"
+          >
+            Lorem ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu Lorem<br class="hidden md:block" />
+            ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu donec.
+          </p>
+        </div>
+      </section>
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 pt-[45px] md:pt-[72px] 2xl:max-w-[90rem] mx-auto"
+      >
+        <img
+          src="./images/g1.png"
+          alt="gallery"
+          class="md:object-contain object-cover 2xl:w-full 2xl:object-cover"
+        />
+        <img
+          src="./images/g2.png"
+          alt="gallery"
+          class="md:object-contain object-cover 2xl:w-full 2xl:object-cover"
+        />
+        <img
+          src="./images/g3.png"
+          alt="gallery"
+          class="md:object-contain object-cover 2xl:w-full 2xl:object-cover"
+        />
+        <img
+          src="./images/g5.png"
+          alt="gallery"
+          class="md:object-contain object-cover 2xl:-mt-1 2xl:w-full h-[14rem] -mt-10 md:-mt-0 md:h-full w-full xl:-mt-[1px]"
+        />
+        <img
+          src="./images/g4.png"
+          alt="gallery"
+          class="md:object-contain object-cover 2xl:w-full md:-mt-[3.2rem] lg:-mt-[4.25rem] xl:-mt-[5.4rem] mac:-mt-[5.95rem] 2xl:-mt-28"
+        />
+        <img
+          src="./images/g6.png"
+          alt="gallery"
+          class="md:object-contain object-cover 2xl:w-full 2xl:-mt-10 h-[13.8rem] md:h-auto md:-mt-5 lg:-mt-7 mac-mt-9 xl:-mt-9 mac:-mt-10"
+        />
+      </div>
+    </main>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

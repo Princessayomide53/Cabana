@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script defer src="https://unpkg.com/swup@4"></script> -->
+    <title>Contact Page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
-
-  <body>
+  <body >
     <header style="min-height: 10%" class="sticky top-0 z-10">
       <nav class="flex-1 relative">
         <span
@@ -51,13 +50,13 @@
           </div>
         </span>
         <!-- <ul
-          class="hidden md:grid grid-cols-5 grid-rows-1 text-center text-white uppercase"
+          class="hidden md:grid grid-cols-5 grid-rows-1 overflow-hidden text-center text-white uppercase"
         >
           <li class="">
             <a class="" href="/about.html">about</a>
           </li>
           <li class="">
-            <a href="/gallery.html">gallery</a>
+            <a href="gallery.html">gallery</a>
           </li>
           <li>
             <a href="index.html">
@@ -121,109 +120,91 @@
       </nav>
     </header>
 
-    <main class="main-container overflow-hidden tallscreen:section-min-height">
+    <main class="bg-[#E7FEFF] overflow-y-scroll h-screen overflow-x-hidden">
       <section class="top-section relative">
         <span class="wave-top">
           <img src="./images/waves.png" alt="waves" class="   " />
         </span>
-        <div
-          class="font-semibold pb-8 pt-4 text-white md:pb-[1.1rem] md:pt-[4.1rem] md:px-[7.1rem] lh-tight"
-        >
-          <span class="grillin grillin-drink relative">Grillin</span> and
-          <div class="relative inline-block">
-            <span class="grillin grillin-ticket relative">Chillin</span>
-          </div>
-          on the Lake
-        </div>
 
-        <!-- <img src="./images/drink.svg" alt="drink icon" class="absolute top-[16%] left-[18%]" />
-                <img src="./images/ticket.svg" alt="drink icon" class="absolute top-[23%] right-[17%]" /> -->
-      </section>
-
-      <section
-        class="pt-4 mx-3 md:mx-auto md:max-w-screen-xl flex flex-col md:flex-row justify-around items-center gap-y-[2.5rem] md:gap-y-0 relative"
-      >
-        <div class="figure-cards order-2 md:order-1">
-          <a href="./faq.html" class="checkout-box glass-bg">
-            <figcaption class="p-4">
-              <div class="checkout-title pb-1">
-                Checkout Some of Our FAQs below
-              </div>
-              <div class="checkout-subtitle flex justify-between">
-                <p>Checkout Some of Our FAQs below</p>
-                <span class="bg-gradient rounded-full p-1">
-                  <img src="./images/arrow-right-black.svg" alt="arrow-right" />
-                </span>
-              </div>
-            </figcaption>
-          </a>
-
-          <figure class="home-gallery flex justify-around items-center">
-            <img
-              src="./images/home-gallery-img.jpeg"
-              class="home-gallery-img ml-3"
-              alt="home-gallery"
-            />
-            <div class="pt-4 md:p-4 text-left space-y-4">
-              <figcaption class="gallery-caption">
-                <h4 class="">Explore our gallery</h4>
-
-                <p class="">The perfect combo for unforgetable fun</p>
-
-                <div>
-                  <a href="./gallery.html">View More</a>
-                  <img src="./images/arrow-right.svg" alt="right-arrow" />
-                </div>
-              </figcaption>
-            </div>
-          </figure>
-        </div>
-
-        <div class="flex justify-between gap-x-[2.5rem] order-1 md:order-2">
-          <a href="#" class="card-link slant-right text-white">
-            <p class="card-link__title">from</p>
-            <h4>$150</h4>
-            <h3>Experience our BBQ boat cruise</h3>
-            <span class="bg-gradient rounded-full p-1">
-              <img src="./images/next.svg" alt="next" />
-            </span>
-          </a>
-
-          <a href="#" class="card-link slant-left">
-            <img src="./images/testimonial.png" alt="next" class="pt-3" />
-            <img src="./images/star.svg" alt="star" class="testimonial-star" />
-
-            <div class="text-center pb-8">
-              <h4 class="card-link__exp">Best experience of my life</h4>
-
-              <p class="card-link__name">Kate Williams</p>
-
-              <p class="underline inline-block text-[13px]">Read more</p>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <span class="wave-bottom">
-        <img src="./images/waves.png" alt="waves" class="" />
-      </span>
-
-      <section class="max-w-screen-md flex justify-center mx-auto mt-8 p-8">
-        <a class="book-button bg-cabana-orange" href="#">
-          Book Now
+        <div class="relative">
           <img
-            src="./images/arrow-right-white.svg"
-            alt="arrow"
-            class="animate-shake"
+            src="./images/drink-small.svg"
+            alt="grillin-drink"
+            class="absolute left-[5.1rem] top-1 md:left-[16rem] lg:left-[19.2rem] md:top-14 xl:left-[26.5rem] xl:top-12"
           />
-        </a>
+          <span
+            class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+            >Contact</span
+          >
+          <img
+            src="./images/ticket-small.svg"
+            alt="grillin-ticket"
+            class="absolute right-[5rem] top-1 md:right-[16rem] lg:right-[19rem] md:top-14 xl:right-[26rem] xl:top-12"
+          />
+          <p
+            class="text-[#293D4E] mt-2 px-3 md:px-0 md:-mt-[12px] text-center font-medium leading-normal text-sm lg:text-lg"
+          >
+            Lorem ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu Lorem<br class="hidden md:block" />
+            ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu donec.
+          </p>
+        </div>
+
+        <form
+          class="md:max-w-[40rem] lg:max-w-[50rem] mx-auto xl:max-w-[70rem] mac:max-w-[75rem] pt-[32px] md:pt-[50px] space-y-[22px] md:space-y-[42px]"
+        >
+          <div class="flex flex-col gap-3">
+            <label
+              class="text-[#26465B] text-base lg:text-xl xl:text-[20px] font-medium leading-[32px] flex justify-self-start capitalize"
+              >name:</label
+            >
+            <input
+              type="text"
+              class="border-2 border-[#D9D9D9] rounded-md w-full h-[45px] md:h-[60px] xl:text-xl text-base pl-7 focus:outline-blue-400"
+            />
+          </div>
+          <span class="flex gap-5 md:gap-12">
+            <div class="flex flex-col flex-1 gap-3">
+              <label
+                class="text-[#26465B] text-base lg:text-xl xl:text-[20px] font-medium leading-[32px] flex justify-self-start capitalize"
+                >Phone number:</label
+              >
+              <input
+                type="text"
+                class="border-2 border-[#D9D9D9] rounded-md w-full h-[45px] md:h-[60px] xl:text-xl text-base pl-7 focus:outline-blue-400"
+              />
+            </div>
+            <div class="flex flex-1 flex-col gap-3">
+              <label
+                class="text-[#26465B] text-base lg:text-xl xl:text-[20px] font-medium leading-[32px] flex justify-self-start capitalize"
+                >Email address:</label
+              >
+              <input
+                type="text"
+                class="border-2 border-[#D9D9D9] rounded-md w-full h-[45px] md:h-[60px] xl:text-xl text-base pl-7 focus:outline-blue-400"
+              /></div
+          ></span>
+
+          <div class="flex flex-1 flex-col gap-3">
+            <label
+              class="text-[#26465B] text-base lg:text-xl xl:text-[20px] font-medium leading-[32px] flex justify-self-start capitalize"
+              >Message:</label
+            >
+            <textarea
+              class="border-2 border-[#D9D9D9] rounded-md w-full h-[150px] xl:text-xl text-base pl-7 focus:outline-blue-400"
+            ></textarea>
+          </div>
+          <div class="flex justify-end pt-5 md:pt-0 pb-5 md:pb-7">
+            <button
+              class="bg-[#F17036] text-white text-base flex justify-self-end px-7 py-2 rounded-full"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
       </section>
     </main>
-
-    <!-- <script src="./scripts/swup.js"></script> -->
-    <script>
-      // const swup = new Swup();
-    </script>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
