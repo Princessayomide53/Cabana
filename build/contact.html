@@ -74,7 +74,7 @@
         <!-- mobile menu -->
         <ul class="flex justify-between md:hidden">
           <li class="">
-            <a href="/index.html">
+            <a href="index.html">
               <img src="images/logo.png" height="69px" width="219px" alt="" />
             </a>
           </li>
@@ -121,16 +121,19 @@
     </header>
 
     <main class="bg-[#E7FEFF] overflow-y-scroll h-screen overflow-x-hidden">
-      <section class="top-section relative">
-        <span class="wave-top">
-          <img src="./images/waves.png" alt="waves" class="   " />
+      <section class="top-section2 md:hidden relative">
+        <span class="wave-top wave-tops">
+          <img
+            src="./images/waves.png"
+            alt="waves"
+            class="md:-mt-5 lg:-mt-0 md:hidden"
+          />
         </span>
-
         <div class="relative">
           <img
             src="./images/drink-small.svg"
             alt="grillin-drink"
-            class="absolute left-[5.1rem] top-1 md:left-[16rem] lg:left-[19.2rem] md:top-14 xl:left-[26.5rem] xl:top-12"
+            class="absolute contact-1 top-1"
           />
           <span
             class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
@@ -139,7 +142,38 @@
           <img
             src="./images/ticket-small.svg"
             alt="grillin-ticket"
-            class="absolute right-[5rem] top-1 md:right-[16rem] lg:right-[19rem] md:top-14 xl:right-[26rem] xl:top-12"
+            class="absolute contact-2 top-1"
+          />
+          <p
+            class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+          >
+            Lorem ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu Lorem<br class="hidden md:block" />
+            ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu donec.
+          </p>
+        </div>
+      </section>
+      <!-- large -->
+      <section class="top-section relative">
+        <span class="wave-top">
+          <img src="./images/waves.png" alt="waves" class="hidden md:block" />
+        </span>
+
+        <div class="relative hidden md:block">
+          <img
+            src="./images/drink-small.svg"
+            alt="grillin-drink"
+            class="absolute top-1 md:left-[16rem] lg:left-[19.2rem] md:top-14 xl:left-[26.5rem] xl:top-12"
+          />
+          <span
+            class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+            >Contact</span
+          >
+          <img
+            src="./images/ticket-small.svg"
+            alt="grillin-ticket"
+            class="absolute top-1 md:right-[16rem] lg:right-[19rem] md:top-14 xl:right-[26rem] xl:top-12"
           />
           <p
             class="text-[#293D4E] custom mt-2 px-3 md:px-0 md:-mt-[12px] text-center font-medium leading-normal text-sm lg:text-lg"
@@ -152,7 +186,7 @@
         </div>
 
         <form
-          class="md:max-w-[40rem] lg:max-w-[50rem] mx-auto xl:max-w-[70rem] mac:max-w-[75rem] pb-[40px] pt-[32px] md:pt-[50px] space-y-[22px] md:space-y-[42px]"
+          class="md:max-w-[40rem] -mt-16 md:-mt-0 lg:max-w-[50rem] mx-auto xl:max-w-[70rem] mac:max-w-[75rem] pb-[40px] pt-[32px] md:pt-[50px] space-y-[22px] md:space-y-[42px]"
         >
           <div class="flex flex-col gap-3">
             <label
@@ -164,7 +198,7 @@
               class="border-2 border-[#D9D9D9] rounded-md w-full h-[45px] md:h-[60px] xl:text-xl text-base pl-7 focus:outline-blue-400"
             />
           </div>
-          <span class="flex gap-5 md:gap-12">
+          <span class="flex flex-col md:flex-row gap-5 md:gap-12">
             <div class="flex flex-col flex-1 gap-3">
               <label
                 class="custom text-[#26465B] text-base lg:text-xl xl:text-[20px] font-medium leading-[32px] flex justify-self-start capitalize"
@@ -204,6 +238,11 @@
           </div>
         </form>
       </section>
+      <article class="relative mt-5 mb-5 md:mb-0 md:mt-7 lg:mt-16">
+        <span class="wave-bottom">
+          <img src="./images/waves.png" alt="waves" class="" />
+        </span>
+      </article>
     </main>
     <script src="./scripts/index.js"></script>
   </body>

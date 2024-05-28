@@ -652,6 +652,14 @@ video {
   margin-top: -2.5rem;
 }
 
+.-mt-7 {
+  margin-top: -1.75rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -710,6 +718,14 @@ video {
 
 .mt-\[80px\] {
   margin-top: 80px;
+}
+
+.-mt-16 {
+  margin-top: -4rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .inline-block {
@@ -1900,12 +1916,60 @@ nav {
 @media (min-width: 540px) {
   .about-1 {
     position: absolute;
-    left: 10.5rem !important;
+    left: 9.5rem !important;
   }
 
   .about-2 {
     position: absolute;
-    right: 10.3rem !important;
+    right: 9.3rem !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .menu-1 {
+    position: absolute;
+    left: 5.5rem !important;
+  }
+
+  .menu-2 {
+    position: absolute;
+    right: 5.3rem !important;
+  }
+}
+
+@media (min-width: 390px) {
+  .menu-1 {
+    position: absolute;
+    left: 6.5rem !important;
+  }
+
+  .menu-2 {
+    position: absolute;
+    right: 6.3rem !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .contact-1 {
+    position: absolute;
+    left: 3.5rem !important;
+  }
+
+  .contact-2 {
+    position: absolute;
+    right: 3.5rem !important;
+  }
+}
+
+@media (min-width: 390px) {
+  .contact-1 {
+    position: absolute;
+    left: 5.1rem !important;
+  }
+
+  .contact-2 {
+    position: absolute;
+    right: 5rem !important;
   }
 }
 
@@ -2615,6 +2679,10 @@ nav li a:hover::after {
     left: 16rem;
   }
 
+  .md\:left-\[18rem\] {
+    left: 18rem;
+  }
+
   .md\:left-\[4rem\] {
     left: 4rem;
   }
@@ -2633,6 +2701,10 @@ nav li a:hover::after {
 
   .md\:right-\[17rem\] {
     right: 17rem;
+  }
+
+  .md\:right-\[18rem\] {
+    right: 18rem;
   }
 
   .md\:right-\[4rem\] {
@@ -2694,6 +2766,10 @@ nav li a:hover::after {
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .md\:mb-\[35px\] {
@@ -3182,6 +3258,10 @@ nav li a:hover::after {
     left: 20.8rem;
   }
 
+  .lg\:left-\[21\.5rem\] {
+    left: 21.5rem;
+  }
+
   .lg\:left-\[7\.8rem\] {
     left: 7.8rem;
   }
@@ -3200,6 +3280,10 @@ nav li a:hover::after {
 
   .lg\:right-\[20\.5rem\] {
     right: 20.5rem;
+  }
+
+  .lg\:right-\[21\.5rem\] {
+    right: 21.5rem;
   }
 
   .lg\:right-\[7\.9rem\] {
@@ -3510,6 +3594,10 @@ nav li a:hover::after {
     left: 27.8rem;
   }
 
+  .xl\:left-\[29rem\] {
+    left: 29rem;
+  }
+
   .xl\:left-\[36\.5rem\] {
     left: 36.5rem;
   }
@@ -3528,6 +3616,10 @@ nav li a:hover::after {
 
   .xl\:right-\[27\.5rem\] {
     right: 27.5rem;
+  }
+
+  .xl\:right-\[28\.8rem\] {
+    right: 28.8rem;
   }
 
   .xl\:right-\[36rem\] {

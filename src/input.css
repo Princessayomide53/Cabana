@@ -234,11 +234,53 @@ nav {
 @media (min-width: 540px) {
   .about-1 {
     position: absolute;
-    left: 10.5rem !important;
+    left: 9.5rem !important;
   }
   .about-2 {
     position: absolute;
-    right: 10.3rem !important;
+    right: 9.3rem !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .menu-1 {
+    position: absolute;
+    left: 5.5rem !important;
+  }
+  .menu-2 {
+    position: absolute;
+    right: 5.3rem !important;
+  }
+}
+@media (min-width: 390px) {
+  .menu-1 {
+    position: absolute;
+    left: 6.5rem !important;
+  }
+  .menu-2 {
+    position: absolute;
+    right: 6.3rem !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .contact-1 {
+    position: absolute;
+    left: 3.5rem !important;
+  }
+  .contact-2 {
+    position: absolute;
+    right: 3.5rem !important;
+  }
+}
+@media (min-width: 390px) {
+  .contact-1 {
+    position: absolute;
+    left: 5.1rem !important;
+  }
+  .contact-2 {
+    position: absolute;
+    right: 5rem !important;
   }
 }
 
