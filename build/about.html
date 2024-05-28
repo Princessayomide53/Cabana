@@ -10,7 +10,7 @@
     />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
-  <body >
+  <body>
     <header style="min-height: 10%" class="sticky top-0 z-10">
       <nav class="flex-1 relative">
         <span
@@ -74,7 +74,7 @@
         <!-- mobile menu -->
         <ul class="flex justify-between md:hidden">
           <li class="">
-            <a href="/index.html">
+            <a href="index.html">
               <img src="images/logo.png" height="69px" width="219px" alt="" />
             </a>
           </li>
@@ -121,7 +121,34 @@
     </header>
 
     <main class="bg-[#E7FEFF] overflow-y-scroll h-screen overflow-x-hidden">
-      <section class="top-section relative">
+      <section class="top-section2 md:hidden relative">
+        <div class="relative">
+          <img
+            src="./images/drink-small.svg"
+            alt="grillin-drink"
+            class="absolute about-1 top-1"
+          />
+          <span
+            class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+            >About</span
+          >
+          <img
+            src="./images/ticket-small.svg"
+            alt="grillin-ticket"
+            class="absolute about-2 top-1"
+          />
+          <p
+            class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+          >
+            Lorem ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu Lorem<br class="hidden md:block" />
+            ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+            cursus eu donec.
+          </p>
+        </div>
+      </section>
+      <!-- large -->
+      <section class="top-section hidden md:block relative">
         <span class="wave-top">
           <img src="./images/waves.png" alt="waves" class="   " />
         </span>
@@ -142,7 +169,7 @@
             class="absolute right-[5rem] top-1 md:right-[16rem] lg:right-[19rem] md:top-14 xl:right-[26rem] xl:top-12"
           />
           <p
-            class="text-[#293D4E] mt-2 px-3 md:px-0 md:-mt-[12px] text-center font-medium leading-normal text-sm lg:text-lg"
+            class="text-[#293D4E] custom mt-2 px-3 md:px-0 md:-mt-[12px] text-center font-medium leading-normal text-sm lg:text-lg"
           >
             Lorem ipsum dolor sit amet consectetur. Etiam massa cras condimentum
             cursus eu Lorem<br class="hidden md:block" />
@@ -152,7 +179,7 @@
         </div>
       </section>
       <div
-        class="bg-white md:h-[450px] lg:h-[389px] mt-[36px] md:mt-[44px] lg:mt-[64px] mb-[50px] md:mb-[35px] w-full"
+        class="bg-white md:h-[450px] about lg:h-[389px] mt-[36px] md:mt-[44px] lg:mt-[64px] mb-[50px] md:mb-[35px] w-full"
       >
         <h4
           class="xl:text-[30px] lg:text-[28px] text-xl md:text-[24px] mac:text-[36px] font-bold leading-normal text-center pt-[35px] pb-[22px] md:pb-[28px] text-[#003362]"
@@ -161,7 +188,7 @@
         </h4>
 
         <p
-          class="mac:max-w-[80rem] xl:max-w-[70rem] max-w-[20.8rem] lg:max-w-[58rem] md:max-w-[43rem] mx-auto text-sm leading-[28px] md:text-[13px] text-[#003362] lg:text-[15px] xl:text-[17px] mac:text-lg pb-[34px] font-normal md:leading-[39px]"
+          class="mac:max-w-[80rem] customs xl:max-w-[70rem] max-w-[20.8rem] lg:max-w-[58rem] md:max-w-[43rem] mx-auto text-sm leading-[28px] md:text-[13px] text-[#003362] lg:text-[15px] xl:text-[17px] mac:text-lg pb-[34px] font-normal md:leading-[39px]"
         >
           Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque
           vulputate odio vulputate tempor faucibus semper. Orci id consequat
@@ -182,7 +209,7 @@
         </p>
       </div>
       <div
-        class="mb-[42px] flex flex-col md:flex-row md:max-w-[45rem] xl:max-w-[75rem] lg:max-w-[60rem] mac:max-w-[83rem] mx-auto"
+        class="pb-[65px] flex flex-col md:flex-row md:max-w-[45rem] xl:max-w-[75rem] lg:max-w-[60rem] mac:max-w-[83rem] mx-auto"
       >
         <div
           class="bg-[#F27034] flex-1 py-6 h-[200px] md:h-[153.796px] flex flex-col justify-center items-center"

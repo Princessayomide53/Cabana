@@ -16,6 +16,7 @@ module.exports = {
         tallscreen: { raw: '(max-aspect-ratio: 13/20)' },
 
         mac: '1440px',
+        iphone: '380px',
       },
       keyframes: {
         'open-menu': {

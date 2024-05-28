@@ -65,6 +65,10 @@
   @apply max-w-screen-xl mx-auto px-5 sm:px-6 lg:px-[5.5rem] pb-4 pt-[2.9rem] md:text-[6rem] text-[2.6rem] text-center relative;
 }
 
+.top-section2 {
+  @apply mx-auto px-5 sm:px-6 pb-4 pt-[2.9rem]  text-[2.6rem] text-center relative;
+}
+
 .bg-cabana-orange {
   background: #ff4a2e;
 }
@@ -72,6 +76,30 @@
 .bg-cabana-white {
   background: #ffffff;
 }
+
+.faq-question .icon {
+  /* font-size: 18px; */
+  transition: transform 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.faq-question.active .icon {
+  transform: rotate(45deg);
+}
+
+/* .posts {
+  @apply iphone:left-[3.4rem];
+}
+.right-posts {
+  @apply iphone:right-[3.7rem];
+} */
 
 .bg-gradient {
   background: linear-gradient(146deg, #f24922 23.95%, #f2f494 92.5%);
@@ -87,12 +115,189 @@ body {
 }
 
 nav {
-  background-color: #03b9c5;
+  background-color: #dceeff;
+  z-index: 1;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.slider-dot {
+  width: 9.77px;
+  height: 9.77px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.slider-dot.active {
+  background-color: #00a8e8;
+  /* border-radius: 114.4px; */
+}
+
+.slider {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 360px) {
+  .sec1 {
+    position: absolute;
+    left: 2.8rem;
+  }
+  .sec2 {
+    position: absolute;
+    right: 3.1rem;
+  }
+}
+@media (min-width: 380px) {
+  .sec1 {
+    position: absolute;
+    left: 3.6rem !important;
+  }
+  .sec2 {
+    position: absolute;
+    right: 3.9rem !important;
+  }
+}
+@media (min-width: 540px) {
+  .sec1 {
+    position: absolute;
+    left: 8.5rem !important;
+  }
+  .sec2 {
+    position: absolute;
+    right: 8.9rem !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .gallerys-1 {
+    position: absolute;
+    left: 4.1rem !important;
+  }
+  .gallerys-2 {
+    position: absolute;
+    right: 4rem !important;
+  }
+}
+@media (min-width: 380px) {
+  .gallerys-1 {
+    position: absolute;
+    left: 4.9rem !important;
+  }
+  .gallerys-2 {
+    position: absolute;
+    right: 4.8rem !important;
+  }
+}
+@media (min-width: 540px) {
+  .gallerys-1 {
+    position: absolute;
+    left: 9.7rem !important;
+  }
+  .gallerys-2 {
+    position: absolute;
+    right: 10rem !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .about-1 {
+    position: absolute;
+    left: 5.1rem !important;
+  }
+  .about-2 {
+    position: absolute;
+    right: 5rem !important;
+  }
+}
+
+@media (min-width: 380px) {
+  .about-1 {
+    position: absolute;
+    left: 5.8rem !important;
+  }
+  .about-2 {
+    position: absolute;
+    right: 5.6rem !important;
+  }
+}
+
+@media (min-width: 540px) {
+  .about-1 {
+    position: absolute;
+    left: 10.5rem !important;
+  }
+  .about-2 {
+    position: absolute;
+    right: 10.3rem !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .frequent-1 {
+    position: absolute;
+    left: 2.7rem !important;
+  }
+  .frequent-2 {
+    position: absolute;
+    right: 3.1rem !important;
+  }
+}
+@media (min-width: 390px) {
+  .frequent-1 {
+    position: absolute;
+    left: 4.2rem !important;
+  }
+  .frequent-2 {
+    position: absolute;
+    right: 3.7rem !important;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 540px) {
+  .about {
+    height: 500px !important;
+  }
+  .abouts {
+    height: 600px !important;
+  }
+  .about-us {
+    height: 85rem !important;
+  }
+  .wave-tops {
+    margin: -25px;
+  }
+}
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
 }
 
 nav li {
   transition: background-color 0.3s ease;
   cursor: pointer;
+  color: #003362;
+  font-weight: 600;
 }
 
 nav li a {
@@ -131,7 +336,7 @@ nav li a:hover::after {
 }
 
 nav li a:hover {
-  background-color: #003362;
+  /* background-color: #003362; */
   /* height: 100%; */
   text-align: center;
   cursor: pointer;
@@ -139,7 +344,7 @@ nav li a:hover {
 }
 
 nav li:hover {
-  background-color: #003362;
+  /* background-color: #003362; */
   cursor: pointer;
 }
 
@@ -489,11 +694,11 @@ h4.card-link__exp {
     transition: background-color 0.3s ease;
   } */
 
-  nav li a:hover::after {
-    z-index: 1;
-  }
+nav li a:hover::after {
+  z-index: 1;
+}
 
-  /* .wave-top {
+/* .wave-top {
     position: absolute;
     right: -9%;
   }
@@ -505,7 +710,6 @@ h4.card-link__exp {
 /* } */
 
 @media only screen and (max-width: 768px) {
- 
   /* nav li a:hover::after {
     z-index: 1;
   } */

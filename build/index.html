@@ -12,10 +12,10 @@
   </head>
 
   <body>
-    <header style="min-height: 10%" class="sticky top-0 z-10">
+    <header style="min-height: 10%" class="sticky top-0 z-50">
       <nav class="flex-1 relative">
         <span
-          class="flex justify-between mac:max-w-[83rem] md:max-w-[43rem] xl:max-w-[75rem] lg:max-w-[60rem] mx-auto"
+          class="flex justify-between mac:max-w-[83rem] md:max-w-[45rem] xl:max-w-[75rem] lg:max-w-[60rem] mx-auto"
         >
           <a href="index.html">
             <img
@@ -44,7 +44,7 @@
 
           <div class="md:flex justify-center hidden items-center">
             <button
-              class="rounded-full text-white px-7 py-2 flex justify-self-center bg-cabana-orange"
+              class="rounded-full text-white uppercase px-7 py-2 flex justify-self-center bg-cabana-orange"
             >
               Book Now
             </button>
@@ -121,7 +121,9 @@
       </nav>
     </header>
 
-    <main class="main-container overflow-hidden tallscreen:section-min-height">
+    <main
+      class="main-container overflow-hidden overflow-y-scroll h-screen tallscreen:section-min-height"
+    >
       <section class="top-section relative">
         <span class="wave-top">
           <img src="./images/waves.png" alt="waves" class="   " />
@@ -204,9 +206,11 @@
         </div>
       </section>
 
-      <span class="wave-bottom">
-        <img src="./images/waves.png" alt="waves" class="" />
-      </span>
+      <article class="relative">
+        <span class="wave-bottom">
+          <img src="./images/waves.png" alt="waves" class="" />
+        </span>
+      </article>
 
       <section class="max-w-screen-md flex justify-center mx-auto mt-8 p-8">
         <a class="book-button bg-cabana-orange" href="#">
@@ -218,6 +222,1319 @@
           />
         </a>
       </section>
+      <!-- section2 -->
+      <div class="bg-[#E7FEFF] h-[85rem] md:h-[28rem] lg:h-[35rem] xl:h-[39rem] relative z-10">
+        <div class="top-section relative">
+          <span class="wave-top">
+            <img src="./images/waves.png" alt="waves" class="   " />
+          </span>
+        </div>
+        <div class=" md:max-w-[43rem] max-w-[21rem] xl:max-w-[75rem] lg:max-w-[60rem] mac:max-w-[80rem] mx-auto pt-[50px] md:pt-[80px] lg:pt-[100px]">
+          <span class="grid grid-cols-1 gap-10 md:gap-0 md:grid-cols-3">
+            <div
+              class="bg-white h-[370px] md:h-[280px]  md:w-[205px] lg:w-[290px] xl:w-[350px] mac:w-[399px] lg:h-[380px] xl:h-[421px] flex flex-col items-center md:py-[28px] py-[35px] lg:py-[35px] xl:py-[43px] rounded-xl shadow-md shadow-[rgba(0, 0, 0, 0.08)]"
+            >
+              <article
+                class="bg-[#FFE6DB] w-[130px] h-[130px] md:w-[80px] md:h-[80px] lg:w-[160px] flex justify-center items-center lg:h-[160px] rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="112"
+                  height="49"
+                  viewBox="0 0 112 49"
+                  fill="none"
+                  class='h-[40px] md:w-[40px] md:h-[25px] lg:h-auto lg:w-auto'
+                >
+                  <path
+                    d="M111.429 24.9671C111.138 24.36 110.531 23.9774 109.865 23.9774H96.7747L93.1069 19.162C92.7826 18.7295 92.2669 18.4135 91.7263 18.4135H85.7465L77.1469 8.29188C76.8143 7.90099 76.3319 7.67642 75.8246 7.67642H66.5264L64.4471 2.03761C64.1145 1.13939 63.1164 0.681981 62.2182 1.01465C61.32 1.34733 60.8626 2.34534 61.1953 3.24356L62.8337 7.67642H56.6543C55.8226 7.67642 55.1157 8.25862 54.9576 9.07367L54.1343 13.2404H33.3588L32.5355 9.07367C32.3774 8.25862 31.6622 7.67642 30.8388 7.67642H23.2206V1.72989C23.2206 0.773454 22.4471 0 21.4907 0H17.3988C16.7002 0 16.0681 0.42414 15.802 1.07285L13.0658 7.67642H6.32912C5.51407 7.67642 4.80713 8.24198 4.63248 9.04039C4.63248 9.04039 1.0895 25.3414 1.0895 25.3497C1.06455 25.4661 1.04793 25.5909 1.04793 25.7156V36.4859C1.04793 36.9683 1.24754 37.4341 1.60517 37.7584L4.34139 40.2867H1.72992C0.77348 40.2867 0 41.0602 0 42.0166C0 42.9731 0.77348 43.7465 1.72992 43.7465H105.749C106.705 43.7465 107.478 42.9731 107.478 42.0166C107.478 41.0602 106.705 40.2867 105.749 40.2867H100.21L111.204 26.8135C111.629 26.2978 111.712 25.5826 111.429 24.9754V24.9671ZM75.0178 11.1362L76.7893 13.2321H72.3648C71.4083 13.2321 70.6349 14.0055 70.6349 14.962C70.6349 15.9184 71.4083 16.6919 72.3648 16.6919H79.7168L81.164 18.4052H63.3909C62.4345 18.4052 61.661 19.1786 61.661 20.135C61.661 21.0915 62.4345 21.8649 63.3909 21.8649H90.878L92.425 23.9691H64.5303C63.5739 23.9691 62.8004 24.7426 62.8004 25.699V27.695H29.924V25.699C29.924 24.7426 29.1505 23.9691 28.1941 23.9691H4.9402L6.52039 16.6919H31.8119C31.8119 16.6919 31.8618 16.6919 31.8784 16.6919C31.8951 16.6919 31.9117 16.6919 31.9367 16.6919H64.023C64.9794 16.6919 65.7529 15.9184 65.7529 14.962C65.7529 14.0055 64.9794 13.2321 64.023 13.2321H57.6689L58.0847 11.1362H75.0262H75.0178ZM18.5548 3.45981H19.7525V7.66812H16.8083L18.5548 3.45981ZM14.2135 11.1362H29.4083L29.8242 13.2321H7.26893L7.72634 11.1362H14.2218H14.2135ZM95.7351 40.2784H9.43961L4.50773 35.7208V27.4455H26.4475V29.4416C26.4475 30.398 27.221 31.1715 28.1774 31.1715H64.5137C65.4701 31.1715 66.2436 30.398 66.2436 29.4416V27.4455H106.198L95.7184 40.2784H95.7351Z"
+                    fill="#F17036"
+                  />
+                  <path
+                    d="M59.1825 18.4141H35.6874C34.731 18.4141 33.9575 19.1875 33.9575 20.144C33.9575 21.1004 34.731 21.8739 35.6874 21.8739H59.1825C60.1389 21.8739 60.9124 21.1004 60.9124 20.144C60.9124 19.1875 60.1389 18.4141 59.1825 18.4141Z"
+                    fill="#F17036"
+                  />
+                  <path
+                    d="M56.6125 23.2539H38.2655C37.3091 23.2539 36.5356 24.0274 36.5356 24.9838C36.5356 25.9402 37.3091 26.7137 38.2655 26.7137H56.6125C57.5689 26.7137 58.3424 25.9402 58.3424 24.9838C58.3424 24.0274 57.5689 23.2539 56.6125 23.2539Z"
+                    fill="#F17036"
+                  />
+                  <path
+                    d="M30.1484 18.4141H11.4106C10.4541 18.4141 9.68066 19.1875 9.68066 20.144C9.68066 21.1004 10.4541 21.8739 11.4106 21.8739H30.1484C31.1048 21.8739 31.8783 21.1004 31.8783 20.144C31.8783 19.1875 31.1048 18.4141 30.1484 18.4141Z"
+                    fill="#F17036"
+                  />
+                  <path
+                    d="M96.2094 32.077H98.4799C99.4363 32.077 100.21 31.3035 100.21 30.3471C100.21 29.3906 99.4363 28.6172 98.4799 28.6172H96.2094C95.253 28.6172 94.4795 29.3906 94.4795 30.3471C94.4795 31.3035 95.253 32.077 96.2094 32.077Z"
+                    fill="#F17036"
+                  />
+                  <path
+                    d="M105.749 44.7891H1.72992C0.77348 44.7891 0 45.5625 0 46.519C0 47.4754 0.77348 48.2488 1.72992 48.2488H105.749C106.705 48.2488 107.478 47.4754 107.478 46.519C107.478 45.5625 106.705 44.7891 105.749 44.7891Z"
+                    fill="#F17036"
+                  />
+                </svg>
+              </article>
+              <p
+                class="pt-[21px] text-center text-[24px] md:text-base text-[#F17036] leading-normal lg:text-lg xl:text-[24px] font-semibold"
+              >
+                Boat services
+              </p>
+
+              <p
+                class="pt-[28px] mac:pt-[35px] md:text-xs custom text-center text-base px-5 md:px-7 lg:px-5 mac:px-0 text-[#293D4E] lg:text-base xl:text-lg font-medium leading-normal"
+              >
+                Lorem ipsum dolor sit amet consectetur.<br class='hidden mac:block'/>
+                Etiam massa cras condimentum cursus<br class='hidden mac:block'/>
+                eu donec.
+              </p>
+            </div>
+            <div
+              class="bg-white h-[370px] md:h-[280px]  md:w-[205px] lg:w-[290px] xl:w-[350px] mac:w-[399px] lg:h-[380px] xl:h-[421px] flex flex-col items-center md:py-[28px] py-[35px] lg:py-[35px] xl:py-[43px] rounded-xl shadow-md shadow-[rgba(0, 0, 0, 0.08)]"
+            >
+              <article
+                class="bg-[#D2F9FB] w-[130px] h-[130px] md:w-[80px] md:h-[80px] lg:w-[160px] flex justify-center items-center lg:h-[160px] rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="105"
+                  height="81"
+                  viewBox="0 0 105 81"
+                  fill="none"
+                  class='h-[60px] md:w-[40px] md:h-[25px] lg:h-auto lg:w-auto'
+
+                >
+                  <path
+                    d="M15.4876 48.6944L13.7676 49.0422C12.856 49.2207 12.2639 50.1136 12.4518 51.0253C12.6116 51.8242 13.3165 52.3787 14.0966 52.3787C14.2094 52.3787 14.3128 52.3693 14.4256 52.3411L87.8676 37.6038C88.7793 37.4253 89.3714 36.5324 89.1834 35.6207C89.0048 34.709 88.112 34.1169 87.2097 34.3049L50.4699 41.6829L52.2839 31.504C52.3779 30.9589 52.1993 30.395 51.8045 30.0096C51.4098 29.6243 50.8458 29.4551 50.3007 29.5585L46.09 30.4044L43.59 25.8178C43.2422 25.1693 42.5091 24.8309 41.7854 24.9719L37.8003 25.7708L37.2928 23.2425C37.1142 22.3308 36.2213 21.7481 35.319 21.9267C34.4073 22.1053 33.8153 22.9981 34.0032 23.9004L34.5107 26.4287L29.6704 27.3968L29.1628 24.8685C28.9843 23.9568 28.0914 23.3741 27.1891 23.5527C26.2774 23.7313 25.6853 24.6241 25.8733 25.5358L26.3808 28.0641L21.5404 29.0322L21.0329 26.5039C20.8544 25.5922 19.9614 25.0001 19.0592 25.1881C18.1475 25.3666 17.5554 26.2595 17.7434 27.1618L18.2509 29.6901L15.1023 30.3198C14.6699 30.4044 14.2846 30.6675 14.0308 31.0341C13.7865 31.4007 13.6925 31.8612 13.7865 32.2935L14.6699 36.6922L13.4011 36.9459C12.9217 37.0399 12.5082 37.3407 12.2733 37.7636C12.0289 38.1866 11.9913 38.6941 12.1511 39.1547L15.5158 48.6756L15.4876 48.6944ZM46.936 42.3784L18.8148 48.0177L15.9293 39.8689L16.9538 39.6622L48.5431 33.318L46.936 42.369V42.3784ZM17.3862 33.2898L41.2309 28.5058L42.6407 31.0905L17.9407 36.0436L17.3862 33.2898Z"
+                    fill="#00AFBA"
+                  />
+                  <path
+                    d="M43.4862 35.6199C42.537 35.8079 41.9261 36.729 42.114 37.6782C42.302 38.6275 43.2231 39.2384 44.1724 39.0504C45.1217 38.8625 45.7325 37.9414 45.5446 36.9921C45.3566 36.0428 44.4355 35.4319 43.4862 35.6199Z"
+                    fill="#00AFBA"
+                  />
+                  <path
+                    d="M63.3928 21.6932C64.7086 21.43 66.0621 22.0785 66.6824 23.2628C66.9832 23.8361 67.5659 24.1745 68.1768 24.1745C68.346 24.1745 68.5151 24.1462 68.6749 24.0899C69.4832 24.0241 70.1411 23.385 70.2163 22.5485C70.3197 21.2138 71.3254 20.0954 72.6412 19.8322C73.5529 19.6536 74.1451 18.7608 73.9571 17.8585C73.7785 16.9468 72.8856 16.3547 71.9833 16.5426C70.1881 16.8998 68.675 18.0182 67.7727 19.5127C66.3535 18.4788 64.5301 18.037 62.735 18.3942C61.8233 18.5728 61.2311 19.4657 61.4191 20.3679C61.5977 21.2796 62.4905 21.8717 63.3928 21.6838V21.6932Z"
+                    fill="#00AFBA"
+                  />
+                  <path
+                    d="M47.5652 18.4682C48.8811 18.205 50.2345 18.8535 50.8548 20.0378C51.1556 20.6111 51.7383 20.9494 52.3492 20.9494C52.5184 20.9494 52.6876 20.9212 52.8473 20.8649C53.6556 20.7991 54.3136 20.16 54.3888 19.3235C54.5015 17.9888 55.4978 16.8704 56.8136 16.6072C57.7253 16.4286 58.3174 15.5358 58.1295 14.6241C57.9509 13.7124 57.058 13.1203 56.1557 13.3083C54.3606 13.6654 52.8473 14.7839 51.945 16.2877C50.5258 15.2538 48.7025 14.812 46.9073 15.1692C45.9956 15.3478 45.4035 16.2407 45.5915 17.1524C45.77 18.064 46.663 18.6468 47.5652 18.4682Z"
+                    fill="#00AFBA"
+                  />
+                  <path
+                    d="M104.766 38.4017C104.531 38.0257 104.156 37.7532 103.723 37.6498L95.1891 35.6008L88.3186 1.35171C88.234 0.909964 87.9708 0.533999 87.6042 0.280232C87.2377 0.0358637 86.7772 -0.0581332 86.3448 0.0358545L1.35171 17.0947C0.919362 17.1792 0.533999 17.4424 0.280232 17.8089C0.0358637 18.1755 -0.0581332 18.636 0.0358545 19.0684L7.97783 58.6466C8.10942 59.3046 8.61691 59.8027 9.22783 59.9437L93.5255 80.1604C93.657 80.1886 93.7887 80.2074 93.9202 80.2074C94.2304 80.2074 94.5312 80.1228 94.7943 79.9631C95.1703 79.7281 95.4428 79.3521 95.5462 78.9198L104.954 39.6705C105.058 39.2382 104.983 38.7776 104.757 38.4017H104.766ZM3.66377 20.0553L85.3579 3.65439L92.642 39.9337L10.9478 56.3345L3.66377 20.0553ZM92.6796 76.5043L17.4424 58.4587L23.749 57.1898L43.5992 61.9456C43.7307 61.9738 43.8624 61.9926 43.9939 61.9926C44.7553 61.9926 45.4414 61.4757 45.6293 60.705C45.8455 59.8027 45.291 58.891 44.3887 58.6748L31.6064 55.6108L38.1103 54.3044L59.2857 59.3797C59.4173 59.4079 59.5489 59.4267 59.6805 59.4267C60.4418 59.4267 61.1279 58.9098 61.3159 58.1391C61.5321 57.2368 60.9775 56.3251 60.0752 56.109L45.9677 52.7254L66.8047 48.543L82.4255 52.2931C82.5571 52.3213 82.6887 52.3401 82.8203 52.3401C83.5816 52.3401 84.2677 51.8231 84.4557 51.0524C84.6718 50.1501 84.1173 49.2385 83.215 49.0223L74.6528 46.9733L81.1567 45.6669L95.8846 49.2009C96.0161 49.229 96.1478 49.2479 96.2794 49.2479C97.0406 49.2479 97.7268 48.7309 97.9147 47.9602C98.1309 47.058 97.5764 46.1463 96.6741 45.9301L89.0047 44.0879L94.9823 42.8849C95.894 42.7063 96.4861 41.8134 96.2981 40.9112L95.9598 39.2194L101.345 40.507L92.7172 76.4855L92.6796 76.5043Z"
+                    fill="#00AFBA"
+                  />
+                  <path
+                    d="M77.4441 66.6149L51.3625 60.3553C50.4602 60.1391 49.5485 60.6936 49.3324 61.5959C49.1162 62.4982 49.6707 63.4099 50.573 63.6261L76.6546 69.8857C76.7862 69.9139 76.9178 69.9327 77.0493 69.9327C77.8106 69.9327 78.4967 69.4157 78.6847 68.645C78.9009 67.7427 78.3464 66.831 77.4441 66.6149Z"
+                    fill="#00AFBA"
+                  />
+                  <path
+                    d="M92.3412 63.8642L67.425 57.8866C66.5227 57.6704 65.611 58.2249 65.3949 59.1272C65.1787 60.0295 65.7332 60.9411 66.6355 61.1573L91.5517 67.135C91.6833 67.1631 91.8148 67.1819 91.9464 67.1819C92.7077 67.1819 93.3938 66.665 93.5818 65.8943C93.798 64.992 93.2435 64.0803 92.3412 63.8642Z"
+                    fill="#00AFBA"
+                  />
+                  <path
+                    d="M93.7699 57.8944L64.1637 50.7889C63.2615 50.5727 62.3498 51.1273 62.1336 52.0295C61.9175 52.9318 62.472 53.8435 63.3743 54.0597L92.9804 61.1652C93.112 61.1934 93.2436 61.2121 93.3752 61.2121C94.1365 61.2121 94.8226 60.6952 95.0105 59.9245C95.2267 59.0222 94.6722 58.1105 93.7699 57.8944Z"
+                    fill="#00AFBA"
+                  />
+                  <path
+                    d="M95.1983 51.916L91.6549 51.0702C90.7527 50.854 89.841 51.4085 89.6248 52.3108C89.4087 53.2131 89.9632 54.1247 90.8655 54.3409L94.4088 55.1868C94.5404 55.215 94.672 55.2338 94.8036 55.2338C95.5649 55.2338 96.251 54.7169 96.439 53.9462C96.6551 53.0439 96.1006 52.1322 95.1983 51.916Z"
+                    fill="#00AFBA"
+                  />
+                </svg>
+              </article>
+              <p
+                class="pt-[21px] text-center text-[24px] md:text-base text-[#00AFBA] leading-normal lg:text-lg xl:text-[24px] font-semibold"
+              >
+                Cruise bookings
+              </p>
+
+              <p
+                class="pt-[28px] mac:pt-[35px] custom text-center text-base md:text-xs px-5 md:px-7 lg:px-5 mac:px-0 text-[#293D4E] lg:text-base xl:text-lg font-medium leading-normal"
+              >
+                Lorem ipsum dolor sit amet consectetur.<br class='hidden mac:block'/>
+                Etiam massa cras condimentum cursus<br class='hidden mac:block'/>
+                eu donec.
+              </p>
+            </div>
+            <div
+              class="bg-white h-[370px] md:h-[280px]  md:w-[205px] lg:w-[290px] xl:w-[350px] mac:w-[399px] lg:h-[380px] xl:h-[421px] flex flex-col items-center md:py-[28px] py-[35px] lg:py-[35px] xl:py-[43px] rounded-xl shadow-md shadow-[rgba(0, 0, 0, 0.08)]"
+            >
+              <article
+                class="bg-[#DCEEFF] w-[130px] h-[130px] md:w-[80px] md:h-[80px] lg:w-[160px] flex justify-center items-center lg:h-[160px] rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="72"
+                  height="86"
+                  viewBox="0 0 72 86"
+                  fill="none"
+                  class='h-[70px] md:w-[40px] md:h-[28px] lg:h-auto lg:w-auto'
+
+                >
+                  <path
+                    d="M60.7688 18.5903H46.4551L49.6692 10.1219C49.9606 9.36084 49.572 8.51885 48.8191 8.2274C48.0581 7.93594 47.2161 8.32454 46.9246 9.07747L43.3138 18.5903H24.5067C23.7781 12.5021 18.5804 7.75781 12.2979 7.75781C5.5134 7.75781 0 13.2793 0 20.0557C0 26.8321 5.5215 32.3536 12.2979 32.3536C13.0508 32.3536 13.7956 32.2807 14.5324 32.1512C16.605 34.2885 19.3981 35.7215 22.5232 36.0535C23.179 42.6841 28.4495 47.9789 35.072 48.6671V82.7676H28.3118C27.5022 82.7676 26.8465 83.4234 26.8465 84.233C26.8465 85.0426 27.5022 85.6984 28.3118 85.6984H44.7711C45.5807 85.6984 46.2365 85.0426 46.2365 84.233C46.2365 83.4234 45.5807 82.7676 44.7711 82.7676H38.0109V48.6671C44.6334 47.9789 49.904 42.6841 50.5597 36.0535C57.1175 35.3491 62.2504 29.7871 62.2504 23.0431V20.0557C62.2504 19.2461 61.5946 18.5903 60.785 18.5903H60.7688ZM59.3035 21.5292V23.0512C59.3035 23.4156 59.2873 23.7718 59.2468 24.1199H44.3582L45.3459 21.5292H59.3116H59.3035ZM41.2169 24.1199H23.9157C24.2072 23.2779 24.4095 22.4116 24.5148 21.5292H42.2046L41.2169 24.1199ZM13.7714 23.0512V21.5292H21.5436C21.3978 22.4278 21.1307 23.3022 20.7339 24.1199H13.828C13.7876 23.7637 13.7714 23.4075 13.7714 23.0512ZM12.2979 29.4228C7.13261 29.4228 2.93076 25.221 2.93076 20.0557C2.93076 14.8904 7.13261 10.6886 12.2979 10.6886C16.9612 10.6886 20.8392 14.1132 21.5436 18.5822H12.2979C11.4883 18.5822 10.8325 19.238 10.8325 20.0476V23.0351C10.8325 25.3424 11.4316 27.5203 12.4922 29.4066C12.4274 29.4066 12.3626 29.4066 12.306 29.4066L12.2979 29.4228ZM49.151 33.2037C48.3414 33.2037 47.6857 33.8595 47.6857 34.6691C47.6857 40.8139 42.6823 45.8173 36.5374 45.8173C30.3925 45.8173 25.3892 40.8139 25.3892 34.6691C25.3892 33.8595 24.7334 33.2037 23.9238 33.2037C19.7462 33.2037 16.1597 30.6696 14.5972 27.0588H36.0355L30.8459 40.7249C30.5544 41.4859 30.9431 42.3279 31.696 42.6193C31.866 42.6841 32.0441 42.7165 32.2141 42.7165C32.8051 42.7165 33.3638 42.3522 33.5905 41.7693L39.1767 27.0588H58.4777C56.9232 30.6696 53.3286 33.2037 49.151 33.2037Z"
+                    fill="#003362"
+                  />
+                  <path
+                    d="M50.0095 7.99454C50.301 8.31028 50.6977 8.4722 51.0944 8.4722C51.4506 8.4722 51.8068 8.34268 52.0821 8.08361C52.6812 7.53308 52.7217 6.6101 52.1711 6.011L50.8758 4.59419C50.3252 3.99508 49.4023 3.95462 48.8032 4.50515C48.2041 5.05568 48.1636 5.97862 48.7141 6.57773L50.0095 7.99454Z"
+                    fill="#003362"
+                  />
+                  <path
+                    d="M52.9077 5.72279C53.1748 6.20045 53.6768 6.46763 54.1869 6.46763C54.4297 6.46763 54.6807 6.40285 54.9155 6.27331C55.6198 5.86851 55.8627 4.97795 55.466 4.27359L54.4216 2.4439C54.0168 1.73955 53.1263 1.49665 52.4219 1.89335C51.7176 2.29816 51.4747 3.18872 51.8714 3.89308L52.9158 5.72279H52.9077Z"
+                    fill="#003362"
+                  />
+                  <path
+                    d="M55.8626 3.70491C56.0003 4.40926 56.6156 4.89503 57.3037 4.89503C57.3928 4.89503 57.4899 4.88693 57.5871 4.87074C58.3805 4.71691 58.8986 3.94779 58.7448 3.14628L58.3643 1.18703C58.2105 0.393616 57.4414 -0.132621 56.6399 0.0292999C55.8464 0.183125 55.3283 0.952252 55.4821 1.75376L55.8626 3.71299V3.70491Z"
+                    fill="#003362"
+                  />
+                  <path
+                    d="M71.0995 4.8218L61.2628 0.709C60.5179 0.393254 59.6517 0.749481 59.344 1.49432C59.0283 2.23915 59.3845 3.10542 60.1293 3.41307L69.966 7.53395C70.1522 7.61491 70.3465 7.64731 70.5327 7.64731C71.1075 7.64731 71.65 7.30726 71.8848 6.74864C72.2005 6.0038 71.8443 5.13753 71.0995 4.82988V4.8218Z"
+                    fill="#003362"
+                  />
+                  <path
+                    d="M44.326 33.762C43.5164 33.762 42.8606 34.4178 42.8606 35.2274C42.8606 38.7896 39.9622 41.688 36.4 41.688C35.5903 41.688 34.9346 42.3438 34.9346 43.1534C34.9346 43.963 35.5903 44.6188 36.4 44.6188C41.5814 44.6188 45.7994 40.4008 45.7994 35.2193C45.7994 34.4097 45.1437 33.7539 44.3341 33.7539L44.326 33.762Z"
+                    fill="#003362"
+                  />
+                </svg>
+              </article>
+              <p
+                class="pt-[21px] text-center text-[24px] md:text-base text-[#003362] leading-normal lg:text-lg xl:text-[24px] font-semibold"
+              >
+                BBQ Parties
+              </p>
+
+              <p
+                class="pt-[28px] mac:pt-[35px] md:text-xs custom text-center text-base px-5 md:px-7 lg:px-5 mac:px-0 text-[#293D4E] lg:text-base xl:text-lg font-medium leading-normal"
+              >
+                Lorem ipsum dolor sit amet consectetur.<br class='hidden mac:block'/>
+                Etiam massa cras condimentum cursus<br class='hidden mac:block'/>
+                eu donec.
+              </p>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <!-- <div class="relative h-[63rem] pt-[90px] pb-[40px] bg-[#E7FEFF]">
+        <img
+          src="./images/drink-small.svg"
+          alt="grillin-drink"
+          class="absolute left-[5.1rem] top-1 md:left-[16rem] lg:left-[19.2rem] md:top-14 xl:left-[36.5rem] xl:top-12"
+        />
+        <p
+          class="text-[#003362] uppercase text-center text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+        >
+          ABOUT US
+        </p>
+        <img
+          src="./images/ticket-small.svg"
+          alt="grillin-ticket"
+          class="absolute right-[5rem] top-1 md:right-[16rem] lg:right-[19rem] md:top-14 xl:right-[36rem] xl:top-12"
+        />
+        <p
+          class="text-[#293D4E] mt-2 customs px-3 md:px-0 md:mt-6 text-center font-medium leading-normal text-sm lg:text-lg"
+        >
+          Lorem ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+          cursus eu Lorem<br class="hidden md:block" />
+          ipsum dolor sit amet consectetur. Etiam massa cras condimentum cursus
+          eu donec.
+        </p>
+
+        <article
+          class="flex flex-1 mt-[80px] justify-between bg-white h-[700.399px]"
+        >
+          <div class="w-[720px] h-[700.399px] pl-[4.5rem] pr-5">
+            <h4
+              class="xl:text-[28px] lg:text-[26px] text-xl md:text-[24px] mac:text-[32px] font-bold leading-normal text-left pt-[70px] pb-[22px] md:pb-[28px] text-[#003362]"
+            >
+              OUR STORY
+            </h4>
+
+            <p
+              class="text-[#293D4E] customs text-lg leading-[39px] font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque
+              vulputate odio vulputate tempor faucibus semper. Orci id consequat
+              enim tellus mi sociis mattis varius aliquet. Montes in interdum id
+              turpis ipsum egestas ullamcorper consectetur. Ultrices purus urna
+              purus consectetur elementum. Fermentum id urna posuere euismod
+              varius urna id vel. Leo facilisis dis dignissim leo. Lorem ipsum
+              dolor sit amet consectetur. Pulvinar pellentesque vulputate odio
+              vulputate tempor faucibus semper. Orci id consequat enim tellus mi
+              sociis mattis varius aliquet. Montes in interdum id turpis ipsum
+              egestas ullamcorper consectetur. Ultrices purus urna purus
+              consectetur elementum. Fermentum id urna posuere euismod varius
+              urna id vel. Leo facilisis dis dignissim leo
+            </p>
+            <div class="pt-9 flex items-center">
+              <button
+                class="rounded-full text-white px-7 py-2 flex justify-self-center bg-cabana-orange"
+              >
+                <a href="about.html">Read more</a>
+              </button>
+            </div>
+          </div>
+          <img
+            src="./images/headers.png"
+            alt="about-image"
+            class="w-[700px] h-[700.399px]"
+          />
+        </article>
+      </div> -->
+      <!-- About section -->
+      <div class="h-[89.5rem] about-us md:h-[57rem] lg:h-[65rem] bg-[#E7FEFF] relative z-10">
+        <section class="top-section2 md:hidden relative">
+          <div class="relative">
+            <img
+              src="./images/drink-small.svg"
+              alt="grillin-drink"
+              class="absolute about-1 top-1 "
+            />
+            <span
+              class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+              >About</span
+            >
+            <img
+              src="./images/ticket-small.svg"
+              alt="grillin-ticket"
+              class="absolute about-2 top-1"
+            />
+            <p
+              class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu Lorem<br class="hidden md:block" />
+              ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+              cursus eu donec.
+            </p>
+          </div>
+        </section>
+
+        <!-- large -->
+        <section class="top-section hidden md:block">
+          <div class="relative md:-mt-8 lg:-mt-0">
+            <img
+              src="./images/drink-small.svg"
+              alt="grillin-drink"
+              class="absolute  top-1 md:left-[16.8rem] lg:left-[20.8rem] md:top-14 xl:left-[27.8rem] xl:top-12"
+            />
+            <span
+              class="text-[#003362] uppercase text-2xl md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+            >
+              About
+            </span>
+            <img
+              src="./images/ticket-small.svg"
+              alt="grillin-ticket"
+              class="absolute top-1 md:right-[17rem] lg:right-[20.5rem] md:top-14 xl:right-[27.5rem] xl:top-12"
+            />
+            <p
+              class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu Lorem<br class="hidden md:block" />
+              ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+              cursus eu donec.
+            </p>
+          </div>
+        </section>
+        <article class="flex flex-col md:flex-row flex-1 mt-[35px] md:mt-[55px] lg:mt-[80px] justify-between bg-white">
+          <div class="lg:w-[500px] about md:w-[350px] h-[680px] iphone:h-[650px] xl:w-[720px] md:h-[605px] px-[1.3rem] lg:h-[705px] md:pl-[1.8rem] lg:pl-[2.45rem] xl:pl-[3.45rem] mac:pl-[4.5rem] md:px-0 md:pr-3 lg:pr-5">
+            <h4
+              class="xl:text-[28px] lg:text-[26px] text-xl md:text-[24px] pt-[50px] md:pt-[40px] mac:text-[32px] font-bold leading-normal pb-[30px] text-left lg:pt-[50px] xl:pt-[70px] mac:pt-[60px] lg:pb-[22px] md:pb-[18px] text-[#003362]"
+            >
+              OUR STORY
+            </h4>
+            <p
+              class="text-[#293D4E] leading-normal text-base customs md:text-[12.2px] lg:text-[13px] xl:text-base mac:text-xl xl:leading-[39px] mac:leading-[39px] md:leading-[28.5px] lg:leading-[39px] font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque
+              vulputate odio vulputate tempor faucibus semper. Orci id consequat
+              enim tellus mi sociis mattis varius aliquet. Montes in interdum id
+              turpis ipsum egestas ullamcorper consectetur. Ultrices purus urna
+              purus consectetur elementum. Fermentum id urna posuere euismod
+              varius urna id vel. Leo facilisis dis dignissim leo. Lorem ipsum
+              dolor sit amet consectetur. Pulvinar pellentesque vulputate odio
+              vulputate tempor faucibus semper. Orci id consequat enim tellus mi
+              sociis mattis varius aliquet. Montes in interdum id turpis ipsum
+              egestas ullamcorper consectetur. Ultrices purus urna purus
+              consectetur elementum. Fermentum id urna posuere euismod varius
+              urna id vel. Leo facilisis dis dignissim leo.
+            </p>
+            <div class="lg:pt-9 mac:pt-7 md:pt-6 pt-7 flex justify-center md:justify-start md:items-center">
+              <button class="rounded-full text-white md:px-7 md:py-2 py-3 md:flex-none flex items-center justify-center flex-grow sm:text-center bg-cabana-orange">
+                <a href="about.html">Read more</a>
+              </button>
+            </div>
+            
+          </div>
+          <img
+            src="./images/headers.png"
+            alt="about-image"
+            class="lg:w-[550px] hidden md:flex md:w-[400px] md:h-[605px] xl:w-[700px] lg:h-[705px]"
+          />
+          <img
+            src="./images/header2.png"
+            alt="about-image"
+            class=" h-[500px] abouts flex md:hidden"
+          />
+        </article>
+      </div>
+
+      <!-- gallery -->
+      <div class="md:h-[55rem] h-[57rem] lg:h-[50rem]  xl:h-[63rem] bg-[#E7FEFF]">
+        <section class="top-section2 md:hidden relative">
+          <span class="wave-top wave-tops">
+            <img src="./images/waves.png" alt="waves" class="  md:-mt-5 lg:-mt-0" />
+          </span>
+          <div class="relative">
+
+            <img
+              src="./images/drink-small.svg"
+              alt="grillin-drink"
+              class="absolute gallerys-1 top-1 "
+            />
+            <span
+              class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+              >Gallery</span
+            >
+            <img
+              src="./images/ticket-small.svg"
+              alt="grillin-ticket"
+              class="absolute gallerys-2 top-1"
+            />
+            <p
+              class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu Lorem<br class="hidden md:block" />
+              ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+              cursus eu donec.
+            </p>
+          </div>
+        </section>
+
+        <!-- large screen -->
+        <section class="top-section hidden md:block relative">
+          <span class="wave-top">
+            <img src="./images/waves.png" alt="waves" class="  md:-mt-5 lg:-mt-0" />
+          </span>
+          <div class="relative  md:-mt-5 lg:-mt-0">
+            <img
+              src="./images/drink-small.svg"
+              alt="grillin-drink"
+              class="absolute  top-1 md:left-[16.2rem] lg:left-[19.2rem] md:top-14 xl:left-[26.5rem] xl:top-12"
+            />
+            <span
+              class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+              >Gallery</span
+            >
+            <img
+              src="./images/ticket-small.svg"
+              alt="grillin-ticket"
+              class="absolute top-1 md:right-[16rem] lg:right-[19rem] md:top-14 xl:right-[26rem] xl:top-12"
+            />
+            <p
+              class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu Lorem<br class="hidden md:block" />
+              ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+              cursus eu donec.
+            </p>
+          </div>
+        </section>
+        <div
+          class="xl:flex hidden justify-center items-center gap-[30px] h-[40rem] bg-[#E7FEFF] pt-[10px]"
+        >
+          <img src="./images/R1.png" alt="" class="h-[271.151px]" />
+          <span class="flex-col flex justify-center items-center">
+            <span class="flex gap-x-[20px] gap-y-[32px] items-center">
+              <img src="./images/R3.png" alt="" class="" />
+              <img src="./images/R4.png" alt="" class="h-[168px]"
+            /></span>
+            <span class="flex gap-[20px] items-center">
+              <img src="./images/R6.png" alt="" />
+              <img src="./images/R5.png" alt=""
+            /></span>
+          </span>
+          <img src="./images/R2.png" alt="" class="h-[299px]" />
+        </div>
+        <div
+          class="xl:hidden mt-5 lg:-mt-12 md:flex  hidden justify-center items-center gap-y-[50px] md:h-[35rem] lg:h-[30rem] bg-[#E7FEFF] pt-[10px]"
+        >
+          <img src="./images/R1s.png" alt="" class="hidden lg:flex" />
+          <span class="flex-col flex gap-y-[20px] justify-center items-center">
+            <span class="flex gap-12 lg:gap-x-[20px]  lg:gap-y-[32px] items-center">
+              <img src="./images/R3s.png" alt="" class="" />
+              <img src="./images/R4s.png" alt="" class="h-[168px]"
+            /></span>
+            <span class="flex gap-12 lg:gap-[20px] items-center">
+              <img src="./images/R6s.png" alt="" />
+              <img src="./images/R5s.png" alt=""
+            /></span><span class='lg:hidden flex gap-12 justify-center items-center'>
+          <img src="./images/R1s.png" alt="" class=" lg:hidden flex" />
+          <img src="./images/R2s.png" alt="" class="" />
+
+          </span>
+          </span>
+          
+          <img src="./images/R2s.png" alt="" class="hidden lg:flex" />
+        </div>
+        <!-- small screen -->
+        <div class='flex flex-col gap-7 mt-7 max-w-[21rem] mx-auto md:hidden h-[34rem]'>
+          <span class='flex items-center gap-4'>
+            <img src="./images/R3s.png" alt="" class="w-[200px] h-[144.701px]" />
+            <img src="./images/R4s.png" alt="" class=" h-[101.48px]" />
+          </span>
+          <span class='flex items-center gap-4'>
+            <img src="./images/R6s.png" alt="" class="" />
+            <img src="./images/R1s.png" alt="" class="" />
+          </span>
+          <span class='flex items-center gap-4'>
+            <img src="./images/R2s.png" alt="" class="" />
+            <img src="./images/R5s.png" alt="" class="" />
+          </span>
+        </div>
+        <div class="pt-5 pb-7 md:pb-0 hidden md:flex justify-center bg-[#E7FEFF] items-center">
+          <button
+            class="rounded-full text-white flex px-7 py-3 items-center justify-center  bg-cabana-orange"
+          >
+            <a href="gallery.html">View all</a>
+          </button>
+        </div>
+
+        <div class="pt-5 pb-7 px-5  flex md:hidden justify-center bg-[#E7FEFF] items-center">
+          <button
+            class="rounded-full text-white flex flex-grow justify-center items-center md:px-7 py-3 bg-cabana-orange"
+          >
+            <a href="gallery.html">View all</a>
+          </button>
+        </div>
+
+
+
+        <article class="relative mt-7 md:mt-7 lg:mt-16">
+          <span class="wave-bottom">
+            <img src="./images/waves.png" alt="waves" class="" />
+          </span>
+        </article>
+      </div>
+
+      <!-- testimonial -->
+      <div class="bg-[#E7FEFF] h-[43rem] md:h-[48rem] lg:h-[50rem] mac:h-[52rem]">
+
+        <section class="top-section2 md:hidden relative">
+          <div class="relative">
+            <img
+              src="./images/drink-small.svg"
+              alt="grillin-drink"
+              class="absolute sec1 top-1 "
+            />
+            <span
+              class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+              >Testimonial</span
+            >
+            <img
+              src="./images/ticket-small.svg"
+              alt="grillin-ticket"
+              class="absolute sec2  top-1"
+            />
+            <p
+              class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu Lorem<br class="hidden md:block" />
+              ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+              cursus eu donec.
+            </p>
+          </div>
+        </section>
+        <!-- medium screen upward -->
+        <section class="top-section hidden md:block relative">
+          <div class="relative">
+            <img
+              src="./images/drink-small.svg"
+              alt="grillin-drink"
+              class="absolute left-[] top-1 md:left-[14rem] lg:left-[17.2rem] md:top-14 xl:left-[23.5rem] xl:top-12"
+            />
+            <span
+              class="text-[#003362] uppercase text-xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold"
+              >Testimonial</span
+            >
+            <img
+              src="./images/ticket-small.svg"
+              alt="grillin-ticket"
+              class="absolute  right-post top-1 md:right-[14.5rem] lg:right-[18rem] md:top-14 xl:right-[24.2rem] xl:top-12"
+            />
+            <p
+              class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu Lorem<br class="hidden md:block" />
+              ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+              cursus eu donec.
+            </p>
+          </div>
+        </section>
+
+        <!-- carousel -->
+
+        <div class="relative">
+          <span class="carousel-container">
+            <article class="carousel-content" id="carouselContent">
+              <!-- 1st -->
+              <div
+                class="flex flex-col justify-start md:justify-center carousel-item max-w-[75rem] mx-auto pt-[35px] md:pt-[35px] lg:pt-[50px] xl:pt-[70px]"
+              >
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    src="./images/testimonials.png"
+                    alt=""
+                    class="md:w-[180px] w-[100px]  md:h-[180px] flex justify-self-center"
+                  />
+                  <div class="flex pt-[30px] md:pt-[60px] md:px-36 lg:px-32 xl:px-0 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      class="md:mr-5  h-[15px] md:h-auto -mt-0 md:-mt-3"
+                    >
+                      <path
+                        d="M9.18524 12.6071C10.3567 13.0863 11.2619 13.8584 11.9009 14.9234C12.5931 15.9351 12.9392 17.1598 12.9392 18.5975C12.9392 20.5144 12.3269 22.0852 11.1022 23.3099C9.87746 24.5346 8.3599 25.1469 6.54948 25.1469C4.63256 25.1469 3.06175 24.5346 1.83705 23.3099C0.612349 22.0852 0 20.5144 0 18.5975C0 17.639 0.106496 16.7072 0.319487 15.802C0.585726 14.8967 1.06496 13.5389 1.75718 11.7285L5.99038 0.386719H12.3801L9.18524 12.6071ZM26.118 12.6071C27.2895 13.0863 28.1947 13.8584 28.8337 14.9234C29.5259 15.9351 29.872 17.1598 29.872 18.5975C29.872 20.5144 29.2597 22.0852 28.035 23.3099C26.8103 24.5346 25.2927 25.1469 23.4823 25.1469C21.5654 25.1469 19.9945 24.5346 18.7698 23.3099C17.5451 22.0852 16.9328 20.5144 16.9328 18.5975C16.9328 17.639 17.0393 16.7072 17.2523 15.802C17.5185 14.8967 17.9977 13.5389 18.69 11.7285L22.9232 0.386719H29.3129L26.118 12.6071Z"
+                        fill="#00A8E8"
+                      />
+                    </svg>
+
+                    <p
+                      class="text-center text-sm text-[#293D4E] custom leading-[30px] font-medium md:text-sm lg:text-xl"
+                    >
+                      It's incredible how this round boat<br class='md:hidden'/> attracts people.
+                      Residents and tourists<br class='md:hidden'/> alike. My<br class='xl:block hidden'/>
+                      bbq boats were an instant hit<br class='md:hidden'/> with my customers. Two crazy
+                      seasons.
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="25"
+                      viewBox="0 0 30 25"
+                      fill="none"
+                      class="md:mt-5 mt-[6rem] ml-2 h-[15px] md:h-auto md:mr-5 lg:mr-0 lg:mt-10"
+                    >
+                      <path
+                        d="M20.6859 12.2204C19.5144 12.6996 18.6092 13.4717 17.9702 14.5366C17.278 15.5484 16.9319 16.7731 16.9319 18.2107C16.9319 20.1277 17.5442 21.6985 18.7689 22.9232C19.9936 24.1479 21.5112 24.7602 23.3216 24.7602C25.2385 24.7602 26.8093 24.1479 28.034 22.9232C29.2587 21.6985 29.8711 20.1277 29.8711 18.2107C29.8711 17.2523 29.7646 16.3204 29.5516 15.4152C29.2854 14.51 28.8061 13.1522 28.1139 11.3418L23.8807 0H17.491L20.6859 12.2204ZM3.75306 12.2204C2.58161 12.6996 1.67639 13.4717 1.03742 14.5366C0.345198 15.5484 -0.00091362 16.7731 -0.00091362 18.2107C-0.00091362 20.1277 0.611437 21.6985 1.83614 22.9232C3.06083 24.1479 4.5784 24.7602 6.38882 24.7602C8.30574 24.7602 9.87655 24.1479 11.1013 22.9232C12.326 21.6985 12.9383 20.1277 12.9383 18.2107C12.9383 17.2523 12.8318 16.3204 12.6188 15.4152C12.3526 14.51 11.8733 13.1522 11.1811 11.3418L6.94792 0H0.558191L3.75306 12.2204Z"
+                        fill="#00A8E8"
+                      />
+                    </svg>
+                  </div>
+                  <p
+                    class="text-center pt-[32px] text-[#003362] text-xl font-semibold leading-[27px]"
+                  >
+                    ALISA NEWBIE <br /><span class="text-base md:text-lg font-normal"
+                      >Australia</span
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <!-- 2nd -->
+              <div
+              class="flex flex-col justify-start md:justify-center carousel-item max-w-[75rem] mx-auto pt-[35px] md:pt-[35px] lg:pt-[50px] xl:pt-[70px]"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <img
+                  src="./images/test2.png"
+                  alt=""
+                  class="md:w-[180px] w-[100px]  md:h-[180px] flex justify-self-center"
+                />
+                <div class="flex pt-[30px] md:pt-[60px] md:px-36 lg:px-32 xl:px-0 ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="26"
+                    viewBox="0 0 30 26"
+                    fill="none"
+                    class="md:mr-5  h-[15px] md:h-auto -mt-0 md:-mt-3"
+                  >
+                    <path
+                      d="M9.18524 12.6071C10.3567 13.0863 11.2619 13.8584 11.9009 14.9234C12.5931 15.9351 12.9392 17.1598 12.9392 18.5975C12.9392 20.5144 12.3269 22.0852 11.1022 23.3099C9.87746 24.5346 8.3599 25.1469 6.54948 25.1469C4.63256 25.1469 3.06175 24.5346 1.83705 23.3099C0.612349 22.0852 0 20.5144 0 18.5975C0 17.639 0.106496 16.7072 0.319487 15.802C0.585726 14.8967 1.06496 13.5389 1.75718 11.7285L5.99038 0.386719H12.3801L9.18524 12.6071ZM26.118 12.6071C27.2895 13.0863 28.1947 13.8584 28.8337 14.9234C29.5259 15.9351 29.872 17.1598 29.872 18.5975C29.872 20.5144 29.2597 22.0852 28.035 23.3099C26.8103 24.5346 25.2927 25.1469 23.4823 25.1469C21.5654 25.1469 19.9945 24.5346 18.7698 23.3099C17.5451 22.0852 16.9328 20.5144 16.9328 18.5975C16.9328 17.639 17.0393 16.7072 17.2523 15.802C17.5185 14.8967 17.9977 13.5389 18.69 11.7285L22.9232 0.386719H29.3129L26.118 12.6071Z"
+                      fill="#00A8E8"
+                    />
+                  </svg>
+
+                  <p
+                    class="text-center text-sm text-[#293D4E] custom leading-[30px] font-medium md:text-sm lg:text-xl"
+                  >
+                    It's incredible how this round boat<br class='md:hidden'/> attracts people.
+                    Residents and tourists<br class='md:hidden'/> alike. My<br class='xl:block hidden'/>
+                    bbq boats were an instant hit<br class='md:hidden'/> with my customers. Two crazy
+                    seasons.
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="25"
+                    viewBox="0 0 30 25"
+                    fill="none"
+                    class="md:mt-5 mt-[6rem] ml-2 h-[15px] md:h-auto md:mr-5 lg:mr-0 lg:mt-10"
+                  >
+                    <path
+                      d="M20.6859 12.2204C19.5144 12.6996 18.6092 13.4717 17.9702 14.5366C17.278 15.5484 16.9319 16.7731 16.9319 18.2107C16.9319 20.1277 17.5442 21.6985 18.7689 22.9232C19.9936 24.1479 21.5112 24.7602 23.3216 24.7602C25.2385 24.7602 26.8093 24.1479 28.034 22.9232C29.2587 21.6985 29.8711 20.1277 29.8711 18.2107C29.8711 17.2523 29.7646 16.3204 29.5516 15.4152C29.2854 14.51 28.8061 13.1522 28.1139 11.3418L23.8807 0H17.491L20.6859 12.2204ZM3.75306 12.2204C2.58161 12.6996 1.67639 13.4717 1.03742 14.5366C0.345198 15.5484 -0.00091362 16.7731 -0.00091362 18.2107C-0.00091362 20.1277 0.611437 21.6985 1.83614 22.9232C3.06083 24.1479 4.5784 24.7602 6.38882 24.7602C8.30574 24.7602 9.87655 24.1479 11.1013 22.9232C12.326 21.6985 12.9383 20.1277 12.9383 18.2107C12.9383 17.2523 12.8318 16.3204 12.6188 15.4152C12.3526 14.51 11.8733 13.1522 11.1811 11.3418L6.94792 0H0.558191L3.75306 12.2204Z"
+                      fill="#00A8E8"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="text-center pt-[32px] text-[#003362] text-xl font-semibold leading-[27px]"
+                >
+                  ALISA NEWBIE <br /><span class="text-base md:text-lg font-normal"
+                    >Australia</span
+                  >
+                </p>
+              </div>
+            </div>
+              <!-- 3rd -->
+              <div
+                class="flex flex-col justify-start md:justify-center carousel-item max-w-[75rem] mx-auto pt-[35px] md:pt-[35px] lg:pt-[50px] xl:pt-[70px]"
+              >
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    src="./images/test3.png"
+                    alt=""
+                    class="md:w-[180px] w-[100px]  md:h-[180px] flex justify-self-center"
+                  />
+                  <div class="flex pt-[30px] md:pt-[60px] md:px-36 lg:px-32 xl:px-0 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      class="md:mr-5  h-[15px] md:h-auto -mt-0 md:-mt-3"
+                    >
+                      <path
+                        d="M9.18524 12.6071C10.3567 13.0863 11.2619 13.8584 11.9009 14.9234C12.5931 15.9351 12.9392 17.1598 12.9392 18.5975C12.9392 20.5144 12.3269 22.0852 11.1022 23.3099C9.87746 24.5346 8.3599 25.1469 6.54948 25.1469C4.63256 25.1469 3.06175 24.5346 1.83705 23.3099C0.612349 22.0852 0 20.5144 0 18.5975C0 17.639 0.106496 16.7072 0.319487 15.802C0.585726 14.8967 1.06496 13.5389 1.75718 11.7285L5.99038 0.386719H12.3801L9.18524 12.6071ZM26.118 12.6071C27.2895 13.0863 28.1947 13.8584 28.8337 14.9234C29.5259 15.9351 29.872 17.1598 29.872 18.5975C29.872 20.5144 29.2597 22.0852 28.035 23.3099C26.8103 24.5346 25.2927 25.1469 23.4823 25.1469C21.5654 25.1469 19.9945 24.5346 18.7698 23.3099C17.5451 22.0852 16.9328 20.5144 16.9328 18.5975C16.9328 17.639 17.0393 16.7072 17.2523 15.802C17.5185 14.8967 17.9977 13.5389 18.69 11.7285L22.9232 0.386719H29.3129L26.118 12.6071Z"
+                        fill="#00A8E8"
+                      />
+                    </svg>
+
+                    <p
+                      class="text-center text-sm text-[#293D4E] custom leading-[30px] font-medium md:text-sm lg:text-xl"
+                    >
+                      It's incredible how this round boat<br class='md:hidden'/> attracts people.
+                      Residents and tourists<br class='md:hidden'/> alike. My<br class='xl:block hidden'/>
+                      bbq boats were an instant hit<br class='md:hidden'/> with my customers. Two crazy
+                      seasons.
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="25"
+                      viewBox="0 0 30 25"
+                      fill="none"
+                      class="md:mt-5 mt-[6rem] ml-2 h-[15px] md:h-auto md:mr-5 lg:mr-0 lg:mt-10"
+                    >
+                      <path
+                        d="M20.6859 12.2204C19.5144 12.6996 18.6092 13.4717 17.9702 14.5366C17.278 15.5484 16.9319 16.7731 16.9319 18.2107C16.9319 20.1277 17.5442 21.6985 18.7689 22.9232C19.9936 24.1479 21.5112 24.7602 23.3216 24.7602C25.2385 24.7602 26.8093 24.1479 28.034 22.9232C29.2587 21.6985 29.8711 20.1277 29.8711 18.2107C29.8711 17.2523 29.7646 16.3204 29.5516 15.4152C29.2854 14.51 28.8061 13.1522 28.1139 11.3418L23.8807 0H17.491L20.6859 12.2204ZM3.75306 12.2204C2.58161 12.6996 1.67639 13.4717 1.03742 14.5366C0.345198 15.5484 -0.00091362 16.7731 -0.00091362 18.2107C-0.00091362 20.1277 0.611437 21.6985 1.83614 22.9232C3.06083 24.1479 4.5784 24.7602 6.38882 24.7602C8.30574 24.7602 9.87655 24.1479 11.1013 22.9232C12.326 21.6985 12.9383 20.1277 12.9383 18.2107C12.9383 17.2523 12.8318 16.3204 12.6188 15.4152C12.3526 14.51 11.8733 13.1522 11.1811 11.3418L6.94792 0H0.558191L3.75306 12.2204Z"
+                        fill="#00A8E8"
+                      />
+                    </svg>
+                  </div>
+                  <p
+                    class="text-center pt-[32px] text-[#003362] text-xl font-semibold leading-[27px]"
+                  >
+                    ALISA NEWBIE <br /><span class="text-base md:text-lg font-normal"
+                      >Australia</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <!-- 4th -->
+              <div
+                class="flex flex-col justify-start md:justify-center carousel-item max-w-[75rem] mx-auto pt-[35px] md:pt-[35px] lg:pt-[50px] xl:pt-[70px]"
+              >
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    src="./images/testimonials.png"
+                    alt=""
+                    class="md:w-[180px] w-[100px]  md:h-[180px] flex justify-self-center"
+                  />
+                  <div class="flex pt-[30px] md:pt-[60px] md:px-36 lg:px-32 xl:px-0 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      class="md:mr-5  h-[15px] md:h-auto -mt-0 md:-mt-3"
+                    >
+                      <path
+                        d="M9.18524 12.6071C10.3567 13.0863 11.2619 13.8584 11.9009 14.9234C12.5931 15.9351 12.9392 17.1598 12.9392 18.5975C12.9392 20.5144 12.3269 22.0852 11.1022 23.3099C9.87746 24.5346 8.3599 25.1469 6.54948 25.1469C4.63256 25.1469 3.06175 24.5346 1.83705 23.3099C0.612349 22.0852 0 20.5144 0 18.5975C0 17.639 0.106496 16.7072 0.319487 15.802C0.585726 14.8967 1.06496 13.5389 1.75718 11.7285L5.99038 0.386719H12.3801L9.18524 12.6071ZM26.118 12.6071C27.2895 13.0863 28.1947 13.8584 28.8337 14.9234C29.5259 15.9351 29.872 17.1598 29.872 18.5975C29.872 20.5144 29.2597 22.0852 28.035 23.3099C26.8103 24.5346 25.2927 25.1469 23.4823 25.1469C21.5654 25.1469 19.9945 24.5346 18.7698 23.3099C17.5451 22.0852 16.9328 20.5144 16.9328 18.5975C16.9328 17.639 17.0393 16.7072 17.2523 15.802C17.5185 14.8967 17.9977 13.5389 18.69 11.7285L22.9232 0.386719H29.3129L26.118 12.6071Z"
+                        fill="#00A8E8"
+                      />
+                    </svg>
+
+                    <p
+                      class="text-center text-sm text-[#293D4E] custom leading-[30px] font-medium md:text-sm lg:text-xl"
+                    >
+                      It's incredible how this round boat<br class='md:hidden'/> attracts people.
+                      Residents and tourists<br class='md:hidden'/> alike. My<br class='xl:block hidden'/>
+                      bbq boats were an instant hit<br class='md:hidden'/> with my customers. Two crazy
+                      seasons.
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="25"
+                      viewBox="0 0 30 25"
+                      fill="none"
+                      class="md:mt-5 mt-[6rem] ml-2 h-[15px] md:h-auto md:mr-5 lg:mr-0 lg:mt-10"
+                    >
+                      <path
+                        d="M20.6859 12.2204C19.5144 12.6996 18.6092 13.4717 17.9702 14.5366C17.278 15.5484 16.9319 16.7731 16.9319 18.2107C16.9319 20.1277 17.5442 21.6985 18.7689 22.9232C19.9936 24.1479 21.5112 24.7602 23.3216 24.7602C25.2385 24.7602 26.8093 24.1479 28.034 22.9232C29.2587 21.6985 29.8711 20.1277 29.8711 18.2107C29.8711 17.2523 29.7646 16.3204 29.5516 15.4152C29.2854 14.51 28.8061 13.1522 28.1139 11.3418L23.8807 0H17.491L20.6859 12.2204ZM3.75306 12.2204C2.58161 12.6996 1.67639 13.4717 1.03742 14.5366C0.345198 15.5484 -0.00091362 16.7731 -0.00091362 18.2107C-0.00091362 20.1277 0.611437 21.6985 1.83614 22.9232C3.06083 24.1479 4.5784 24.7602 6.38882 24.7602C8.30574 24.7602 9.87655 24.1479 11.1013 22.9232C12.326 21.6985 12.9383 20.1277 12.9383 18.2107C12.9383 17.2523 12.8318 16.3204 12.6188 15.4152C12.3526 14.51 11.8733 13.1522 11.1811 11.3418L6.94792 0H0.558191L3.75306 12.2204Z"
+                        fill="#00A8E8"
+                      />
+                    </svg>
+                  </div>
+                  <p
+                    class="text-center pt-[32px] text-[#003362] text-xl font-semibold leading-[27px]"
+                  >
+                    ALISA NEWBIE <br /><span class="text-base md:text-lg font-normal"
+                      >Australia</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <!-- 5th -->
+              <div
+              class="flex flex-col justify-start md:justify-center carousel-item max-w-[75rem] mx-auto pt-[35px] md:pt-[35px] lg:pt-[50px] xl:pt-[70px]"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <img
+                  src="./images/test2.png"
+                  alt=""
+                  class="md:w-[180px] w-[100px]  md:h-[180px] flex justify-self-center"
+                />
+                <div class="flex pt-[30px] md:pt-[60px] md:px-36 lg:px-32 xl:px-0 ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="26"
+                    viewBox="0 0 30 26"
+                    fill="none"
+                    class="md:mr-5  h-[15px] md:h-auto -mt-0 md:-mt-3"
+                  >
+                    <path
+                      d="M9.18524 12.6071C10.3567 13.0863 11.2619 13.8584 11.9009 14.9234C12.5931 15.9351 12.9392 17.1598 12.9392 18.5975C12.9392 20.5144 12.3269 22.0852 11.1022 23.3099C9.87746 24.5346 8.3599 25.1469 6.54948 25.1469C4.63256 25.1469 3.06175 24.5346 1.83705 23.3099C0.612349 22.0852 0 20.5144 0 18.5975C0 17.639 0.106496 16.7072 0.319487 15.802C0.585726 14.8967 1.06496 13.5389 1.75718 11.7285L5.99038 0.386719H12.3801L9.18524 12.6071ZM26.118 12.6071C27.2895 13.0863 28.1947 13.8584 28.8337 14.9234C29.5259 15.9351 29.872 17.1598 29.872 18.5975C29.872 20.5144 29.2597 22.0852 28.035 23.3099C26.8103 24.5346 25.2927 25.1469 23.4823 25.1469C21.5654 25.1469 19.9945 24.5346 18.7698 23.3099C17.5451 22.0852 16.9328 20.5144 16.9328 18.5975C16.9328 17.639 17.0393 16.7072 17.2523 15.802C17.5185 14.8967 17.9977 13.5389 18.69 11.7285L22.9232 0.386719H29.3129L26.118 12.6071Z"
+                      fill="#00A8E8"
+                    />
+                  </svg>
+
+                  <p
+                    class="text-center text-sm text-[#293D4E] custom leading-[30px] font-medium md:text-sm lg:text-xl"
+                  >
+                    It's incredible how this round boat<br class='md:hidden'/> attracts people.
+                    Residents and tourists<br class='md:hidden'/> alike. My<br class='xl:block hidden'/>
+                    bbq boats were an instant hit<br class='md:hidden'/> with my customers. Two crazy
+                    seasons.
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="25"
+                    viewBox="0 0 30 25"
+                    fill="none"
+                    class="md:mt-5 mt-[6rem] ml-2 h-[15px] md:h-auto md:mr-5 lg:mr-0 lg:mt-10"
+                  >
+                    <path
+                      d="M20.6859 12.2204C19.5144 12.6996 18.6092 13.4717 17.9702 14.5366C17.278 15.5484 16.9319 16.7731 16.9319 18.2107C16.9319 20.1277 17.5442 21.6985 18.7689 22.9232C19.9936 24.1479 21.5112 24.7602 23.3216 24.7602C25.2385 24.7602 26.8093 24.1479 28.034 22.9232C29.2587 21.6985 29.8711 20.1277 29.8711 18.2107C29.8711 17.2523 29.7646 16.3204 29.5516 15.4152C29.2854 14.51 28.8061 13.1522 28.1139 11.3418L23.8807 0H17.491L20.6859 12.2204ZM3.75306 12.2204C2.58161 12.6996 1.67639 13.4717 1.03742 14.5366C0.345198 15.5484 -0.00091362 16.7731 -0.00091362 18.2107C-0.00091362 20.1277 0.611437 21.6985 1.83614 22.9232C3.06083 24.1479 4.5784 24.7602 6.38882 24.7602C8.30574 24.7602 9.87655 24.1479 11.1013 22.9232C12.326 21.6985 12.9383 20.1277 12.9383 18.2107C12.9383 17.2523 12.8318 16.3204 12.6188 15.4152C12.3526 14.51 11.8733 13.1522 11.1811 11.3418L6.94792 0H0.558191L3.75306 12.2204Z"
+                      fill="#00A8E8"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="text-center pt-[32px] text-[#003362] text-xl font-semibold leading-[27px]"
+                >
+                  ALISA NEWBIE <br /><span class="text-base md:text-lg font-normal"
+                    >Australia</span
+                  >
+                </p>
+              </div>
+            </div>
+              </div>
+            </article>
+            <span class="relative flex justify-center">
+              <div class="slider">
+                <ul class="slider-container">
+                  <li class="slider-dot active"></li>
+                  <li class="slider-dot"></li>
+                  <li class="slider-dot"></li>
+                  <li class="slider-dot"></li>
+                  <li class="slider-dot"></li>
+                </ul></div
+            ></span>
+
+            <!-- slides -->
+            <div class="relative">
+              <!-- Previous Button -->
+              <div
+                onclick="prevSlide()"
+                class="md:w-[60px] w-[35px] h-[35px] left-[2rem] md:h-[60px] absolute  xl:-top-56 mac:-top-52 -top-[16.5rem] md:-top-56 lg:-top-72 transform md:left-[4rem] lg:left-[8rem] bg-white rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  class='md:h-auto h-[20px]'
+                >
+                  <path
+                    d="M8.75 18.75H33.75C34.0815 18.75 34.3995 18.8817 34.6339 19.1161C34.8683 19.3505 35 19.6685 35 20C35 20.3315 34.8683 20.6495 34.6339 20.8839C34.3995 21.1183 34.0815 21.25 33.75 21.25H8.75C8.41848 21.25 8.10054 21.1183 7.86612 20.8839C7.6317 20.6495 7.5 20.3315 7.5 20C7.5 19.6685 7.6317 19.3505 7.86612 19.1161C8.10054 18.8817 8.41848 18.75 8.75 18.75Z"
+                    fill="#003362"
+                  />
+                  <path
+                    d="M9.26973 19.9996L19.6372 30.3646C19.872 30.5993 20.0038 30.9177 20.0038 31.2496C20.0038 31.5816 19.872 31.8999 19.6372 32.1346C19.4025 32.3693 19.0842 32.5012 18.7522 32.5012C18.4203 32.5012 18.102 32.3693 17.8672 32.1346L6.61723 20.8846C6.50083 20.7685 6.40847 20.6306 6.34545 20.4787C6.28244 20.3268 6.25 20.164 6.25 19.9996C6.25 19.8352 6.28244 19.6724 6.34545 19.5205C6.40847 19.3687 6.50083 19.2307 6.61723 19.1146L17.8672 7.86463C18.102 7.62991 18.4203 7.49805 18.7522 7.49805C19.0842 7.49805 19.4025 7.62991 19.6372 7.86463C19.872 8.09934 20.0038 8.41769 20.0038 8.74963C20.0038 9.08157 19.872 9.39991 19.6372 9.63463L9.26973 19.9996Z"
+                    fill="#003362"
+                  />
+                </svg>
+              </div>
+            
+              <!-- Next Button -->
+              <div
+                onclick="nextSlide()"
+                class="md:w-[60px] md:h-[60px] w-[35px] h-[35px] right-[2rem] absolute xl:-top-56 mac:-top-52 -top-[16.5rem] md:-top-56 lg:-top-72 transform md:right-[4rem]  lg:right-[8rem] bg-white rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  class='md:h-auto h-[20px]'
+                >
+                  <path
+                    d="M31.25 18.75H6.25C5.91848 18.75 5.60054 18.8817 5.36612 19.1161C5.13169 19.3505 5 19.6685 5 20C5 20.3315 5.13169 20.6495 5.36612 20.8839C5.60054 21.1183 5.91848 21.25 6.25 21.25H31.25C31.5815 21.25 31.8995 21.1183 32.1339 20.8839C32.3683 20.6495 32.5 20.3315 32.5 20C32.5 19.6685 32.3683 19.3505 32.1339 19.1161C31.8995 18.8817 31.5815 18.75 31.25 18.75Z"
+                    fill="#003362"
+                  />
+                  <path
+                    d="M30.7303 19.9996L20.3628 30.3646C20.128 30.5993 19.9962 30.9177 19.9962 31.2496C19.9962 31.5816 20.128 31.8999 20.3628 32.1346C20.5975 32.3693 20.9158 32.5012 21.2478 32.5012C21.5797 32.5012 21.898 32.3693 22.1328 32.1346L33.3828 20.8846C33.4992 20.7685 33.5915 20.6306 33.6545 20.4787C33.7176 20.3268 33.75 20.164 33.75 19.9996C33.75 19.8352 33.7176 19.6724 33.6545 19.5205C33.5915 19.3687 33.4992 19.2307 33.3828 19.1146L22.1328 7.86463C21.898 7.62991 21.5797 7.49805 21.2478 7.49805C20.9158 7.49805 20.5975 7.62991 20.3628 7.86463C20.128 8.09934 19.9962 8.41769 19.9962 8.74963C19.9962 9.08157 20.128 9.39991 20.3628 9.63463L30.7303 19.9996Z"
+                    fill="#003362"
+                  />
+                </svg>
+              </div>
+            
+          </span>
+        </div>
+      </div>
+      <!-- accordion -->
+      <article class="lg:h-[65.3rem] h-[58rem] md:h-[62.5rem] bg-[#E7FEFF]">
+        <section class="top-section relative mb-14 md:mb-0">
+          <span class="wave-top">
+            <img src="./images/waves.png" alt="waves" class="   " />
+          </span>
+
+          <div class="relative pt-7  md:hidden md:pt-12 mac:pt-16 pb-[56px] md:pb-[95px]">
+            <img
+              src="./images/drink-small.svg"
+              alt="grillin-drink"
+              class="absolute top-2 frequent-1 md:left-[6rem] lg:left-[7.8rem] md:top-10 xl:left-[12rem] xl:top-12"
+            />
+            <p class='text-2xl leading-normal text-[#003362] md:hidden uppercase font-bold'>Frequently <br />asked questions</p>
+            <span
+              class="text-[#003362] uppercase hidden md:block leading-[20px]  text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] md:leading-normal font-bold"
+              >Frequently asked questions</span
+            >
+            <img
+              src="./images/ticket-small.svg"
+              alt="grillin-ticket"
+              class="absolute  top-2 frequent-2 md:right-[6rem] lg:right-[7.9rem] md:top-10 xl:right-[12.2rem] xl:top-12"
+            />
+            <p
+              class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu Lorem<br class="hidden md:block" />
+              ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+              cursus eu donec.
+            </p>
+          </div>
+
+
+          <!-- large -->
+          <div class="relative pt-7 hidden md:block md:pt-12 mac:pt-16 pb-[56px] md:pb-[95px]">
+            <img
+              src="./images/drink-small.svg"
+              alt="grillin-drink"
+              class="absolute  top-2 md:left-[6rem] lg:left-[7.8rem] md:top-10 xl:left-[12rem] xl:top-12"
+            />
+            <p class='text-2xl leading-normal text-[#003362] md:hidden uppercase font-bold'>Frequently <br />asked questions</p>
+            <span
+              class="text-[#003362] uppercase hidden md:block leading-[20px]  text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] md:leading-normal font-bold"
+              >Frequently asked questions</span
+            >
+            <img
+              src="./images/ticket-small.svg"
+              alt="grillin-ticket"
+              class="absolute  top-2 md:right-[6rem] lg:right-[7.9rem] md:top-10 xl:right-[12.2rem] xl:top-12"
+            />
+            <p
+              class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+              condimentum cursus eu Lorem<br class="hidden md:block" />
+              ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+              cursus eu donec.
+            </p>
+          </div>
+          <span class="md:max-w-[40rem] faq-container max-w-[80rem] space-y-[26px] md:space-y-[32px]">
+            <article class='faq-item'>
+              <div
+                onclick="toggleFaq(this)"
+                class="h-[75px] faq-question cursor-pointer bg-white flex justify-between items-center w-full px-[20px] md:px-[34px] py-[15px] md:py-[24px] rounded-md shadow-md shadow-[rgba(0, 0, 0, 0.06)]"
+              >
+                <p class="text-left text-sm leading-normal md:text-base lg:text-xl">
+                  Lorem ipsum dolor sit amet consectetur.<br class='md:hidden'/> Etiam massa cras condimentum
+                </p>
+                <img src="./images/+.png" alt="" class="md:w-[20px] icon w-[17px] h-[17px] md:h-[20px]" />
+              </div>
+              <div class='bg-white hidden faq-answer p-[10px] md:p-[15px] flex-grow shadow-[rgba(0, 0, 0, 0.06)]'>
+                <p class='xl:text-lg hidden md:flex lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id turpis ipsum egestas ullamcorper consectetur. Ultrices purus urna purus consectetur elementum. Fermentum id urna posuere euismod varius urna id vel. Leo facilisis dis dign</p>
+                <p class='xl:text-lg flex md:hidden lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id</p>
+              </div>
+            </article>
+          
+            <article class='faq-item'>
+              <div
+                onclick="toggleFaq(this)"
+                class="h-[75px] faq-question cursor-pointer bg-white flex justify-between items-center w-full px-[20px] md:px-[34px] py-[15px] md:py-[24px] rounded-md shadow-md shadow-[rgba(0, 0, 0, 0.06)]"
+              >
+                <p class="text-left text-sm leading-normal md:text-base lg:text-xl">
+                  Lorem ipsum dolor sit amet consectetur.<br class='md:hidden'/> Etiam massa cras condimentum
+                </p>
+                <img src="./images/+.png" alt="" class="md:w-[20px] icon w-[17px] h-[17px] md:h-[20px]" />
+              </div>
+              <div class='bg-white hidden faq-answer p-[10px] md:p-[15px] flex-grow shadow-[rgba(0, 0, 0, 0.06)]'>
+                <p class='xl:text-lg hidden md:flex lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id turpis ipsum egestas ullamcorper consectetur. Ultrices purus urna purus consectetur elementum. Fermentum id urna posuere euismod varius urna id vel. Leo facilisis dis dign</p>
+                <p class='xl:text-lg flex md:hidden lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id</p>
+              </div>
+            </article>
+            <article class='faq-item'>
+              <div
+                onclick="toggleFaq(this)"
+                class="h-[75px] faq-question cursor-pointer bg-white flex justify-between items-center w-full px-[20px] md:px-[34px] py-[15px] md:py-[24px] rounded-md shadow-md shadow-[rgba(0, 0, 0, 0.06)]"
+              >
+                <p class="text-left text-sm leading-normal md:text-base lg:text-xl">
+                  Lorem ipsum dolor sit amet consectetur.<br class='md:hidden'/> Etiam massa cras condimentum
+                </p>
+                <img src="./images/+.png" alt="" class="md:w-[20px] icon w-[17px] h-[17px] md:h-[20px]" />
+              </div>
+              <div class='bg-white hidden faq-answer p-[10px] md:p-[15px] flex-grow shadow-[rgba(0, 0, 0, 0.06)]'>
+                <p class='xl:text-lg hidden md:flex lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id turpis ipsum egestas ullamcorper consectetur. Ultrices purus urna purus consectetur elementum. Fermentum id urna posuere euismod varius urna id vel. Leo facilisis dis dign</p>
+                <p class='xl:text-lg flex md:hidden lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id</p>
+            </article>
+            <article class='faq-item'>
+              <div
+                onclick="toggleFaq(this)"
+                class="h-[75px] faq-question cursor-pointer bg-white flex justify-between items-center w-full px-[20px] md:px-[34px] py-[15px] md:py-[24px] rounded-md shadow-md shadow-[rgba(0, 0, 0, 0.06)]"
+              >
+                <p class="text-left text-sm leading-normal md:text-base lg:text-xl">
+                  Lorem ipsum dolor sit amet consectetur.<br class='md:hidden'/> Etiam massa cras condimentum
+                </p>
+                <img src="./images/+.png" alt="" class="md:w-[20px] icon w-[17px] h-[17px] md:h-[20px]" />
+              </div>
+              <div class='bg-white hidden faq-answer p-[10px] md:p-[15px] flex-grow shadow-[rgba(0, 0, 0, 0.06)]'>
+                <p class='xl:text-lg hidden md:flex lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id turpis ipsum egestas ullamcorper consectetur. Ultrices purus urna purus consectetur elementum. Fermentum id urna posuere euismod varius urna id vel. Leo facilisis dis dign</p>
+                <p class='xl:text-lg flex md:hidden lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id</p>
+              </div>
+            </article>
+            <article class='faq-item'>
+              <div
+                onclick="toggleFaq(this)"
+                class="h-[75px] faq-question cursor-pointer bg-white flex justify-between items-center w-full px-[20px] md:px-[34px] py-[15px] md:py-[24px] rounded-md shadow-md shadow-[rgba(0, 0, 0, 0.06)]"
+              >
+                <p class="text-left text-sm leading-normal md:text-base lg:text-xl">
+                  Lorem ipsum dolor sit amet consectetur.<br class='md:hidden'/> Etiam massa cras condimentum
+                </p>
+                <img src="./images/+.png" alt="" class="md:w-[20px] icon w-[17px] h-[17px] md:h-[20px]" />
+              </div>
+              <div class='bg-white hidden faq-answer p-[10px] md:p-[15px] flex-grow shadow-[rgba(0, 0, 0, 0.06)]'>
+                <p class='xl:text-lg hidden md:flex lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id turpis ipsum egestas ullamcorper consectetur. Ultrices purus urna purus consectetur elementum. Fermentum id urna posuere euismod varius urna id vel. Leo facilisis dis dign</p>
+                <p class='xl:text-lg flex md:hidden lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id</p>
+              </div>
+            </article>
+          </span>
+        </section>
+        <article class="relative mt-16">
+          <span class="wave-bottom">
+            <img src="./images/waves.png" alt="waves" class="" />
+          </span>
+        </article>
+      </article>
+
+      <!-- footer -->
+      <footer class="bg-[#2458A4] relative z-10 h-[62rem] md:h-[550px] lg:h-[416px] pt-[75px] w-full">
+        <div class="mac:max-w-[80rem] max-w-[21rem] md:max-w-[45rem] xl:max-w-[75rem] lg:max-w-[60rem] mx-auto">
+          <span class="grid grid-cols-1 gap-[90px] md:grid-cols-3 lg:grid-cols-4 mx-auto md:gap-12 lg:items-start lg:gap-0  md:justify-center  lg:justify-items-center">
+            <span>
+              <a href="/index.html">
+                <img src="images/logo.png" height="69px" width="219px" alt="" />
+              </a>
+              <p class="pt-[28px] text-white custom leading-normal text-[17px]">
+                Lorem ipsum dolor sit amet<br />
+                consectetur. Pulvinar<br />
+                pellentesque vulputate odio <br />vulputate
+              </p>
+            </span>
+            <article class='md:hidden flex justify-between'>
+              <span class=' flex flex-col md:hidden'>
+                <h2 class="text-white leading-normal text-xl font-bold">
+                  QUICK LINKS
+                </h2>
+                <p
+                  class="text-white pt-[16px] md:pt-[32px] uppercase text-base custom leading-normal"
+                >
+                  <a href="index.html"> Home</a>
+                </p>
+                <p
+                  class="uppercase pt-[12px] text-base custom leading-normal text-white"
+                >
+                  <a href="menu.html"> Menu</a>
+                </p>
+                <p
+                  class="uppercase pt-[12px] text-base custom leading-normal text-white"
+                >
+                  <a href="gallery.html"> GALLERY</a>
+                </p>
+                <p
+                  class="text-white uppercase pt-[12px] text-base custom leading-normal"
+                >
+                  <a href="faq.html"> FAQ</a>
+                </p>
+                <p
+                  class="uppercase pt-[12px] text-base custom leading-normal text-white"
+                >
+                  <a href="contact.html">CONTACT</a>
+                </p>
+              </span>
+              <span>
+                <h2 class="text-white leading-normal text-xl font-bold">
+                  SOCIALS
+                </h2>
+                <div class="flex gap-4 pt-[16px] md:pt-[32px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.488 3.788C11.4724 2.8034 12.8077 2.25016 14.2 2.25H16.9C17.0989 2.25 17.2897 2.32902 17.4303 2.46967C17.571 2.61032 17.65 2.80109 17.65 3V6.6C17.65 6.79891 17.571 6.98968 17.4303 7.13033C17.2897 7.27098 17.0989 7.35 16.9 7.35H14.2C14.1803 7.35 14.1608 7.35388 14.1426 7.36142C14.1244 7.36896 14.1079 7.38 14.0939 7.39393C14.08 7.40786 14.069 7.4244 14.0614 7.4426C14.0539 7.4608 14.05 7.4803 14.05 7.5V9.45H16.9C17.014 9.44994 17.1266 9.47587 17.229 9.52583C17.3315 9.57579 17.4213 9.64846 17.4915 9.73832C17.5617 9.82817 17.6104 9.93285 17.6341 10.0444C17.6578 10.1559 17.6557 10.2714 17.628 10.382L16.728 13.982C16.6874 14.1443 16.5937 14.2884 16.4618 14.3913C16.3299 14.4942 16.1673 14.5501 16 14.55H14.05V21C14.05 21.1989 13.971 21.3897 13.8303 21.5303C13.6897 21.671 13.4989 21.75 13.3 21.75H9.7C9.50109 21.75 9.31032 21.671 9.16967 21.5303C9.02902 21.3897 8.95 21.1989 8.95 21V14.55H7C6.80109 14.55 6.61032 14.471 6.46967 14.3303C6.32902 14.1897 6.25 13.9989 6.25 13.8V10.2C6.25 10.1015 6.2694 10.004 6.30709 9.91299C6.34478 9.82199 6.40003 9.73931 6.46967 9.66967C6.53931 9.60003 6.62199 9.54478 6.71299 9.50709C6.80398 9.4694 6.90151 9.45 7 9.45H8.95V7.5C8.95016 6.10768 9.5034 4.77244 10.488 3.788ZM14.2 3.75C13.2054 3.75 12.2516 4.14509 11.5483 4.84835C10.8451 5.55161 10.45 6.50544 10.45 7.5V10.2C10.45 10.3989 10.371 10.5897 10.2303 10.7303C10.0897 10.871 9.89891 10.95 9.7 10.95H7.75V13.05H9.7C9.89891 13.05 10.0897 13.129 10.2303 13.2697C10.371 13.4103 10.45 13.6011 10.45 13.8V20.25H12.55V13.8C12.55 13.6011 12.629 13.4103 12.7697 13.2697C12.9103 13.129 13.1011 13.05 13.3 13.05H15.414L15.939 10.95H13.3C13.1011 10.95 12.9103 10.871 12.7697 10.7303C12.629 10.5897 12.55 10.3989 12.55 10.2V7.5C12.55 7.06239 12.7238 6.64271 13.0333 6.33327C13.3427 6.02384 13.7624 5.85 14.2 5.85H16.15V3.75H14.2Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <!-- x -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.9408 10.392L21.5353 1.5H19.7353L13.1428 9.2205L7.87481 1.5H1.7998L9.76481 13.176L1.7998 22.5H3.5998L10.5628 14.346L16.1263 22.5H22.2013L13.9408 10.392ZM11.4763 13.278L10.6693 12.1155L4.2478 2.865H7.01231L12.1933 10.3305L13.0003 11.493L19.7368 21.198H16.9723L11.4763 13.278Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <!-- ig -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.001 9C11.2054 9 10.4423 9.31607 9.87968 9.87868C9.31707 10.4413 9.001 11.2044 9.001 12C9.001 12.7956 9.31707 13.5587 9.87968 14.1213C10.4423 14.6839 11.2054 15 12.001 15C12.7966 15 13.5597 14.6839 14.1223 14.1213C14.6849 13.5587 15.001 12.7956 15.001 12C15.001 11.2044 14.6849 10.4413 14.1223 9.87868C13.5597 9.31607 12.7966 9 12.001 9ZM12.001 7C13.3271 7 14.5989 7.52678 15.5365 8.46447C16.4742 9.40215 17.001 10.6739 17.001 12C17.001 13.3261 16.4742 14.5979 15.5365 15.5355C14.5989 16.4732 13.3271 17 12.001 17C10.6749 17 9.40315 16.4732 8.46547 15.5355C7.52778 14.5979 7.001 13.3261 7.001 12C7.001 10.6739 7.52778 9.40215 8.46547 8.46447C9.40315 7.52678 10.6749 7 12.001 7ZM18.501 6.75C18.501 7.08152 18.3693 7.39946 18.1349 7.63388C17.9005 7.8683 17.5825 8 17.251 8C16.9195 8 16.6015 7.8683 16.3671 7.63388C16.1327 7.39946 16.001 7.08152 16.001 6.75C16.001 6.41848 16.1327 6.10054 16.3671 5.86612C16.6015 5.6317 16.9195 5.5 17.251 5.5C17.5825 5.5 17.9005 5.6317 18.1349 5.86612C18.3693 6.10054 18.501 6.41848 18.501 6.75ZM12.001 4C9.527 4 9.123 4.007 7.972 4.058C7.188 4.095 6.662 4.2 6.174 4.39C5.76562 4.53994 5.39641 4.78026 5.094 5.093C4.78101 5.3954 4.54035 5.76458 4.39 6.173C4.2 6.663 4.095 7.188 4.059 7.971C4.007 9.075 4 9.461 4 12C4 14.475 4.007 14.878 4.058 16.029C4.095 16.812 4.2 17.339 4.389 17.826C4.559 18.261 4.759 18.574 5.091 18.906C5.428 19.242 5.741 19.443 6.171 19.609C6.665 19.8 7.191 19.906 7.971 19.942C9.075 19.994 9.461 20 12 20C14.475 20 14.878 19.993 16.029 19.942C16.811 19.905 17.337 19.8 17.826 19.611C18.234 19.4603 18.6031 19.2201 18.906 18.908C19.243 18.572 19.444 18.259 19.61 17.828C19.8 17.336 19.906 16.81 19.942 16.028C19.994 14.925 20 14.538 20 12C20 9.526 19.993 9.122 19.942 7.971C19.905 7.189 19.799 6.661 19.61 6.173C19.4593 5.76502 19.219 5.39598 18.907 5.093C18.6047 4.77985 18.2355 4.53917 17.827 4.389C17.337 4.199 16.811 4.094 16.029 4.058C14.926 4.006 14.54 4 12 4M12 2C14.717 2 15.056 2.01 16.123 2.06C17.187 2.11 17.913 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2246 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.123 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.877 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16943 19.8222 2.77596 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.012 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.813 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.087 2.277 6.812 2.11 7.877 2.06C8.945 2.013 9.284 2 12.001 2"
+                      fill="white"
+                    />
+                  </svg>
+                  <!-- pinterest -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 2.25C6.615 2.25 2.25 6.615 2.25 12C2.25 17.385 6.615 21.75 12 21.75C17.385 21.75 21.75 17.385 21.75 12C21.75 6.615 17.385 2.25 12 2.25ZM3.75 12C3.75055 10.2618 4.30007 8.56827 5.32014 7.16092C6.34022 5.75357 7.77873 4.70436 9.43042 4.16298C11.0821 3.62161 12.8626 3.61574 14.5178 4.14621C16.1731 4.67668 17.6185 5.71639 18.6478 7.11699C19.6771 8.51758 20.2378 10.2075 20.2498 11.9456C20.2618 13.6837 19.7245 15.3812 18.7147 16.7959C17.7048 18.2106 16.2739 19.2702 14.6262 19.8235C12.9784 20.3768 11.198 20.3955 9.539 19.877C9.96163 19.2132 10.2977 18.498 10.539 17.749L11.055 15.772C11.2684 16.0766 11.5545 16.3231 11.8874 16.489C12.2203 16.6549 12.5893 16.735 12.961 16.722C15.496 16.722 17.278 14.418 17.278 11.556C17.278 8.807 15.033 6.753 12.154 6.753C8.567 6.753 6.662 9.163 6.662 11.782C6.662 13.005 7.309 14.519 8.348 15.006C8.502 15.077 8.603 15.006 8.627 14.893C8.651 14.78 8.793 14.211 8.858 13.949C8.86807 13.9077 8.86796 13.8645 8.85768 13.8232C8.8474 13.782 8.82727 13.7438 8.799 13.712C8.40637 13.159 8.19848 12.4962 8.205 11.818C8.20292 11.3312 8.29967 10.849 8.48938 10.4006C8.67909 9.95226 8.95781 9.54706 9.30868 9.20957C9.65955 8.87207 10.0753 8.60928 10.5306 8.43713C10.986 8.26497 11.4716 8.18702 11.958 8.208C12.4135 8.18135 12.8695 8.24994 13.297 8.40938C13.7245 8.56883 14.1141 8.81562 14.4408 9.13403C14.7676 9.45244 15.0244 9.83547 15.1949 10.2587C15.3654 10.6819 15.4458 11.136 15.431 11.592C15.431 13.836 14.291 15.398 12.819 15.398C12.6288 15.4125 12.438 15.381 12.2625 15.3061C12.0871 15.2312 11.9323 15.1153 11.8112 14.9679C11.69 14.8206 11.6062 14.6463 11.5666 14.4597C11.5271 14.2731 11.533 14.0798 11.584 13.896C11.668 13.546 11.78 13.185 11.888 12.833C12.085 12.195 12.273 11.588 12.273 11.129C12.2935 10.9798 12.2815 10.8279 12.2378 10.6838C12.1942 10.5396 12.1199 10.4066 12.0201 10.2938C11.9203 10.181 11.7974 10.0911 11.6596 10.0302C11.5219 9.96931 11.3726 9.93888 11.222 9.941C10.39 9.941 9.719 10.808 9.719 11.96C9.713 12.367 9.789 12.771 9.945 13.148L8.965 17.304C8.84521 18.0895 8.84521 18.8885 8.965 19.674C8.31914 19.4181 7.70829 19.0814 7.147 18.672C5.7691 17.6657 4.73426 16.2597 4.183 14.645C3.89528 13.7929 3.74902 12.8994 3.75 12Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div> </span
+            >
+            </article>
+            <span class='hidden md:block'>
+              <h2 class="text-white leading-normal text-xl font-bold">
+                QUICK LINKS
+              </h2>
+              <p
+                class="text-white pt-[32px] uppercase text-base custom leading-normal"
+              >
+                <a href="index.html"> Home</a>
+              </p>
+              <p
+                class="uppercase pt-[12px] text-base custom leading-normal text-white"
+              >
+                <a href="menu.html"> Menu</a>
+              </p>
+              <p
+                class="uppercase pt-[12px] text-base custom leading-normal text-white"
+              >
+                <a href="gallery.html"> GALLERY</a>
+              </p>
+              <p
+                class="text-white uppercase pt-[12px] text-base custom leading-normal"
+              >
+                <a href="faq.html"> FAQ</a>
+              </p>
+              <p
+                class="uppercase pt-[12px] text-base custom leading-normal text-white"
+              >
+                <a href="contact.html">CONTACT</a>
+              </p>
+            </span>
+
+            <span>
+              <h2 class="text-white leading-normal text-xl font-bold">
+                CONTACT
+              </h2>
+              <span class="flex gap-3 pt-[16px] md:pt-[32px] items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12 13.5C11.2583 13.5 10.5333 13.2801 9.91661 12.868C9.29993 12.456 8.81928 11.8703 8.53545 11.1851C8.25162 10.4998 8.17736 9.74584 8.32206 9.01841C8.46675 8.29098 8.8239 7.6228 9.34835 7.09835C9.8728 6.5739 10.541 6.21675 11.2684 6.07206C11.9958 5.92736 12.7498 6.00162 13.4351 6.28545C14.1203 6.56928 14.706 7.04993 15.118 7.66661C15.5301 8.2833 15.75 9.00832 15.75 9.75C15.7488 10.7442 15.3533 11.6973 14.6503 12.4003C13.9473 13.1033 12.9942 13.4988 12 13.5ZM12 7.5C11.555 7.5 11.12 7.63196 10.75 7.8792C10.38 8.12643 10.0916 8.47783 9.92127 8.88896C9.75098 9.3001 9.70642 9.7525 9.79323 10.189C9.88005 10.6254 10.0943 11.0263 10.409 11.341C10.7237 11.6557 11.1246 11.87 11.561 11.9568C11.9975 12.0436 12.4499 11.999 12.861 11.8287C13.2722 11.6584 13.6236 11.37 13.8708 11C14.118 10.63 14.25 10.195 14.25 9.75C14.2494 9.15345 14.0122 8.5815 13.5903 8.15967C13.1685 7.73784 12.5966 7.5006 12 7.5Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12 22.5L5.67301 15.0382C5.58509 14.9262 5.49809 14.8135 5.41201 14.7C4.33124 13.2763 3.74739 11.5374 3.75001 9.75C3.75001 7.56196 4.6192 5.46354 6.16638 3.91637C7.71355 2.36919 9.81197 1.5 12 1.5C14.188 1.5 16.2865 2.36919 17.8336 3.91637C19.3808 5.46354 20.25 7.56196 20.25 9.75C20.2526 11.5366 19.669 13.2747 18.5888 14.6978L18.588 14.7C18.588 14.7 18.363 14.9955 18.3293 15.0353L12 22.5ZM6.60976 13.7963C6.60976 13.7963 6.78451 14.0272 6.82426 14.0767L12 20.181L17.1825 14.0685C17.2155 14.0272 17.391 13.7948 17.3918 13.794C18.2746 12.6308 18.7517 11.2103 18.75 9.75C18.75 7.95979 18.0388 6.2429 16.773 4.97703C15.5071 3.71116 13.7902 3 12 3C10.2098 3 8.49291 3.71116 7.22704 4.97703C5.96117 6.2429 5.25001 7.95979 5.25001 9.75C5.24844 11.2112 5.72609 12.6326 6.60976 13.7963Z"
+                    fill="white"
+                  />
+                </svg>
+                <p class="text-white text-base custom leading-normal">
+                  Address: 1564 The birminham <br />road, United Kingdom
+                </p>
+              </span>
+
+              <span class="flex gap-3 pt-[12px] items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L4 8V18H20V8L12 13ZM12 11L20 6H4L12 11ZM4 8V6V18V8Z"
+                    fill="white"
+                  />
+                </svg>
+                <p class="text-white text-base custom leading-normal">
+                  Email: hello@cubana.co.uk
+                </p>
+              </span>
+              <span class="flex gap-3 pt-[12px] items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M19.95 21C17.8667 21 15.8083 20.546 13.775 19.638C11.7417 18.73 9.89167 17.4423 8.225 15.775C6.55833 14.1077 5.271 12.2577 4.363 10.225C3.455 8.19233 3.00067 6.134 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07933 8.725 3.238C8.90833 3.39667 9.01667 3.584 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.704 12.1123 8.162 12.687C8.62 13.2617 9.12433 13.816 9.675 14.35C10.1917 14.8667 10.7333 15.346 11.3 15.788C11.8667 16.23 12.4667 16.634 13.1 17L15.45 14.65C15.6 14.5 15.796 14.3877 16.038 14.313C16.28 14.2383 16.5173 14.2173 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1377 20.775 15.313C20.925 15.4883 21 15.684 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21ZM6.025 9L7.675 7.35L7.25 5H5.025C5.10833 5.68333 5.225 6.35833 5.375 7.025C5.525 7.69167 5.74167 8.35 6.025 9ZM14.975 17.95C15.625 18.2333 16.2877 18.4583 16.963 18.625C17.6383 18.7917 18.3173 18.9 19 18.95V16.75L16.65 16.275L14.975 17.95Z"
+                    fill="white"
+                  />
+                </svg>
+                <p class="text-white text-base custom leading-normal">
+                  Phone: +442200567789
+                </p>
+              </span>
+            </span>
+            <span class='hidden md:block'>
+              <h2 class="text-white leading-normal text-xl font-bold">
+                SOCIALS
+              </h2>
+              <div class="flex gap-4 pt-[32px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.488 3.788C11.4724 2.8034 12.8077 2.25016 14.2 2.25H16.9C17.0989 2.25 17.2897 2.32902 17.4303 2.46967C17.571 2.61032 17.65 2.80109 17.65 3V6.6C17.65 6.79891 17.571 6.98968 17.4303 7.13033C17.2897 7.27098 17.0989 7.35 16.9 7.35H14.2C14.1803 7.35 14.1608 7.35388 14.1426 7.36142C14.1244 7.36896 14.1079 7.38 14.0939 7.39393C14.08 7.40786 14.069 7.4244 14.0614 7.4426C14.0539 7.4608 14.05 7.4803 14.05 7.5V9.45H16.9C17.014 9.44994 17.1266 9.47587 17.229 9.52583C17.3315 9.57579 17.4213 9.64846 17.4915 9.73832C17.5617 9.82817 17.6104 9.93285 17.6341 10.0444C17.6578 10.1559 17.6557 10.2714 17.628 10.382L16.728 13.982C16.6874 14.1443 16.5937 14.2884 16.4618 14.3913C16.3299 14.4942 16.1673 14.5501 16 14.55H14.05V21C14.05 21.1989 13.971 21.3897 13.8303 21.5303C13.6897 21.671 13.4989 21.75 13.3 21.75H9.7C9.50109 21.75 9.31032 21.671 9.16967 21.5303C9.02902 21.3897 8.95 21.1989 8.95 21V14.55H7C6.80109 14.55 6.61032 14.471 6.46967 14.3303C6.32902 14.1897 6.25 13.9989 6.25 13.8V10.2C6.25 10.1015 6.2694 10.004 6.30709 9.91299C6.34478 9.82199 6.40003 9.73931 6.46967 9.66967C6.53931 9.60003 6.62199 9.54478 6.71299 9.50709C6.80398 9.4694 6.90151 9.45 7 9.45H8.95V7.5C8.95016 6.10768 9.5034 4.77244 10.488 3.788ZM14.2 3.75C13.2054 3.75 12.2516 4.14509 11.5483 4.84835C10.8451 5.55161 10.45 6.50544 10.45 7.5V10.2C10.45 10.3989 10.371 10.5897 10.2303 10.7303C10.0897 10.871 9.89891 10.95 9.7 10.95H7.75V13.05H9.7C9.89891 13.05 10.0897 13.129 10.2303 13.2697C10.371 13.4103 10.45 13.6011 10.45 13.8V20.25H12.55V13.8C12.55 13.6011 12.629 13.4103 12.7697 13.2697C12.9103 13.129 13.1011 13.05 13.3 13.05H15.414L15.939 10.95H13.3C13.1011 10.95 12.9103 10.871 12.7697 10.7303C12.629 10.5897 12.55 10.3989 12.55 10.2V7.5C12.55 7.06239 12.7238 6.64271 13.0333 6.33327C13.3427 6.02384 13.7624 5.85 14.2 5.85H16.15V3.75H14.2Z"
+                    fill="white"
+                  />
+                </svg>
+                <!-- x -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M13.9408 10.392L21.5353 1.5H19.7353L13.1428 9.2205L7.87481 1.5H1.7998L9.76481 13.176L1.7998 22.5H3.5998L10.5628 14.346L16.1263 22.5H22.2013L13.9408 10.392ZM11.4763 13.278L10.6693 12.1155L4.2478 2.865H7.01231L12.1933 10.3305L13.0003 11.493L19.7368 21.198H16.9723L11.4763 13.278Z"
+                    fill="white"
+                  />
+                </svg>
+                <!-- ig -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12.001 9C11.2054 9 10.4423 9.31607 9.87968 9.87868C9.31707 10.4413 9.001 11.2044 9.001 12C9.001 12.7956 9.31707 13.5587 9.87968 14.1213C10.4423 14.6839 11.2054 15 12.001 15C12.7966 15 13.5597 14.6839 14.1223 14.1213C14.6849 13.5587 15.001 12.7956 15.001 12C15.001 11.2044 14.6849 10.4413 14.1223 9.87868C13.5597 9.31607 12.7966 9 12.001 9ZM12.001 7C13.3271 7 14.5989 7.52678 15.5365 8.46447C16.4742 9.40215 17.001 10.6739 17.001 12C17.001 13.3261 16.4742 14.5979 15.5365 15.5355C14.5989 16.4732 13.3271 17 12.001 17C10.6749 17 9.40315 16.4732 8.46547 15.5355C7.52778 14.5979 7.001 13.3261 7.001 12C7.001 10.6739 7.52778 9.40215 8.46547 8.46447C9.40315 7.52678 10.6749 7 12.001 7ZM18.501 6.75C18.501 7.08152 18.3693 7.39946 18.1349 7.63388C17.9005 7.8683 17.5825 8 17.251 8C16.9195 8 16.6015 7.8683 16.3671 7.63388C16.1327 7.39946 16.001 7.08152 16.001 6.75C16.001 6.41848 16.1327 6.10054 16.3671 5.86612C16.6015 5.6317 16.9195 5.5 17.251 5.5C17.5825 5.5 17.9005 5.6317 18.1349 5.86612C18.3693 6.10054 18.501 6.41848 18.501 6.75ZM12.001 4C9.527 4 9.123 4.007 7.972 4.058C7.188 4.095 6.662 4.2 6.174 4.39C5.76562 4.53994 5.39641 4.78026 5.094 5.093C4.78101 5.3954 4.54035 5.76458 4.39 6.173C4.2 6.663 4.095 7.188 4.059 7.971C4.007 9.075 4 9.461 4 12C4 14.475 4.007 14.878 4.058 16.029C4.095 16.812 4.2 17.339 4.389 17.826C4.559 18.261 4.759 18.574 5.091 18.906C5.428 19.242 5.741 19.443 6.171 19.609C6.665 19.8 7.191 19.906 7.971 19.942C9.075 19.994 9.461 20 12 20C14.475 20 14.878 19.993 16.029 19.942C16.811 19.905 17.337 19.8 17.826 19.611C18.234 19.4603 18.6031 19.2201 18.906 18.908C19.243 18.572 19.444 18.259 19.61 17.828C19.8 17.336 19.906 16.81 19.942 16.028C19.994 14.925 20 14.538 20 12C20 9.526 19.993 9.122 19.942 7.971C19.905 7.189 19.799 6.661 19.61 6.173C19.4593 5.76502 19.219 5.39598 18.907 5.093C18.6047 4.77985 18.2355 4.53917 17.827 4.389C17.337 4.199 16.811 4.094 16.029 4.058C14.926 4.006 14.54 4 12 4M12 2C14.717 2 15.056 2.01 16.123 2.06C17.187 2.11 17.913 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2246 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.123 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.877 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16943 19.8222 2.77596 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.012 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.813 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.087 2.277 6.812 2.11 7.877 2.06C8.945 2.013 9.284 2 12.001 2"
+                    fill="white"
+                  />
+                </svg>
+                <!-- pinterest -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 2.25C6.615 2.25 2.25 6.615 2.25 12C2.25 17.385 6.615 21.75 12 21.75C17.385 21.75 21.75 17.385 21.75 12C21.75 6.615 17.385 2.25 12 2.25ZM3.75 12C3.75055 10.2618 4.30007 8.56827 5.32014 7.16092C6.34022 5.75357 7.77873 4.70436 9.43042 4.16298C11.0821 3.62161 12.8626 3.61574 14.5178 4.14621C16.1731 4.67668 17.6185 5.71639 18.6478 7.11699C19.6771 8.51758 20.2378 10.2075 20.2498 11.9456C20.2618 13.6837 19.7245 15.3812 18.7147 16.7959C17.7048 18.2106 16.2739 19.2702 14.6262 19.8235C12.9784 20.3768 11.198 20.3955 9.539 19.877C9.96163 19.2132 10.2977 18.498 10.539 17.749L11.055 15.772C11.2684 16.0766 11.5545 16.3231 11.8874 16.489C12.2203 16.6549 12.5893 16.735 12.961 16.722C15.496 16.722 17.278 14.418 17.278 11.556C17.278 8.807 15.033 6.753 12.154 6.753C8.567 6.753 6.662 9.163 6.662 11.782C6.662 13.005 7.309 14.519 8.348 15.006C8.502 15.077 8.603 15.006 8.627 14.893C8.651 14.78 8.793 14.211 8.858 13.949C8.86807 13.9077 8.86796 13.8645 8.85768 13.8232C8.8474 13.782 8.82727 13.7438 8.799 13.712C8.40637 13.159 8.19848 12.4962 8.205 11.818C8.20292 11.3312 8.29967 10.849 8.48938 10.4006C8.67909 9.95226 8.95781 9.54706 9.30868 9.20957C9.65955 8.87207 10.0753 8.60928 10.5306 8.43713C10.986 8.26497 11.4716 8.18702 11.958 8.208C12.4135 8.18135 12.8695 8.24994 13.297 8.40938C13.7245 8.56883 14.1141 8.81562 14.4408 9.13403C14.7676 9.45244 15.0244 9.83547 15.1949 10.2587C15.3654 10.6819 15.4458 11.136 15.431 11.592C15.431 13.836 14.291 15.398 12.819 15.398C12.6288 15.4125 12.438 15.381 12.2625 15.3061C12.0871 15.2312 11.9323 15.1153 11.8112 14.9679C11.69 14.8206 11.6062 14.6463 11.5666 14.4597C11.5271 14.2731 11.533 14.0798 11.584 13.896C11.668 13.546 11.78 13.185 11.888 12.833C12.085 12.195 12.273 11.588 12.273 11.129C12.2935 10.9798 12.2815 10.8279 12.2378 10.6838C12.1942 10.5396 12.1199 10.4066 12.0201 10.2938C11.9203 10.181 11.7974 10.0911 11.6596 10.0302C11.5219 9.96931 11.3726 9.93888 11.222 9.941C10.39 9.941 9.719 10.808 9.719 11.96C9.713 12.367 9.789 12.771 9.945 13.148L8.965 17.304C8.84521 18.0895 8.84521 18.8885 8.965 19.674C8.31914 19.4181 7.70829 19.0814 7.147 18.672C5.7691 17.6657 4.73426 16.2597 4.183 14.645C3.89528 13.7929 3.74902 12.8994 3.75 12Z"
+                    fill="white"
+                  />
+                </svg>
+              </div> </span
+          ></span>
+        </div>
+      </footer>
     </main>
 
     <!-- <script src="./scripts/swup.js"></script> -->
