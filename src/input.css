@@ -234,13 +234,23 @@ nav {
 @media (min-width: 540px) {
   .about-1 {
     position: absolute;
-    left: 9.5rem !important;
+    left: 10.8rem !important;
   }
   .about-2 {
     position: absolute;
-    right: 9.3rem !important;
+    right: 10.5rem !important;
   }
 }
+/* @media (min-width: 912px) {
+  .about-1 {
+    position: absolute;
+    left: 20.8rem !important;
+  }
+  .about-2 {
+    position: absolute;
+    right: 17.5rem !important;
+  }
+} */
 
 @media (min-width: 360px) {
   .menu-1 {
@@ -252,7 +262,7 @@ nav {
     right: 5.3rem !important;
   }
 }
-@media (min-width: 390px) {
+@media (min-width: 380px) {
   .menu-1 {
     position: absolute;
     left: 6.5rem !important;
@@ -260,6 +270,16 @@ nav {
   .menu-2 {
     position: absolute;
     right: 6.3rem !important;
+  }
+}
+@media (min-width: 540px) {
+  .menu-1 {
+    position: absolute;
+    left: 10.8rem !important;
+  }
+  .menu-2 {
+    position: absolute;
+    right: 10.95rem !important;
   }
 }
 
@@ -273,7 +293,7 @@ nav {
     right: 3.5rem !important;
   }
 }
-@media (min-width: 390px) {
+@media (min-width: 380px) {
   .contact-1 {
     position: absolute;
     left: 5.1rem !important;
@@ -281,6 +301,16 @@ nav {
   .contact-2 {
     position: absolute;
     right: 5rem !important;
+  }
+}
+@media (min-width: 540px) {
+  .contact-1 {
+    position: absolute;
+    left: 9.5rem !important;
+  }
+  .contact-2 {
+    position: absolute;
+    right: 9.5rem !important;
   }
 }
 
@@ -294,7 +324,8 @@ nav {
     right: 3.1rem !important;
   }
 }
-@media (min-width: 390px) {
+
+@media (min-width: 380px) {
   .frequent-1 {
     position: absolute;
     left: 4.2rem !important;
@@ -302,6 +333,16 @@ nav {
   .frequent-2 {
     position: absolute;
     right: 3.7rem !important;
+  }
+}
+@media (min-width: 540px) {
+  .frequent-1 {
+    position: absolute;
+    left: 8.7rem !important;
+  }
+  .frequent-2 {
+    position: absolute;
+    right: 8.5rem !important;
   }
 }
 
@@ -318,7 +359,39 @@ nav {
   .wave-tops {
     margin: -25px;
   }
+  .waves-up {
+    margin-top: -35px;
+  }
+  .story {
+    max-width: 30rem;
+  }
+  .about-card {
+    margin-bottom: 40px;
+  }
+  .g2 {
+    height: 250px;
+  }
+  .g4 {
+    height: 350px;
+  }
+  .g6 {
+    height: 307px;
+  }
+  .grillings {
+    padding-left: 54px;
+    padding-right: 54px;
+    line-height: 4rem;
+  }
 }
+
+@media (min-width: 912px) and (max-width: 930px) {
+  #overall {
+    max-width: 45rem !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .carousel-container {
   position: relative;
   overflow: hidden;
