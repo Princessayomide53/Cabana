@@ -2098,6 +2098,10 @@ nav {
     margin-right: auto;
     margin-left: auto;
   }
+
+  .grill {
+    display: none !important;
+  }
 }
 
 .carousel-container {
@@ -3001,6 +3005,30 @@ nav li a:hover::after {
     height: 100%;
   }
 
+  .md\:h-\[9rem\] {
+    height: 9rem;
+  }
+
+  .md\:h-\[9\.5rem\] {
+    height: 9.5rem;
+  }
+
+  .md\:h-\[9\.7rem\] {
+    height: 9.7rem;
+  }
+
+  .md\:h-\[210px\] {
+    height: 210px;
+  }
+
+  .md\:h-\[205px\] {
+    height: 205px;
+  }
+
+  .md\:h-\[200px\] {
+    height: 200px;
+  }
+
   .md\:w-\[120px\] {
     width: 120px;
   }
@@ -3319,6 +3347,10 @@ nav li a:hover::after {
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .md\:text-\[11px\] {
+    font-size: 11px;
   }
 
   .md\:leading-\[28\.5px\] {

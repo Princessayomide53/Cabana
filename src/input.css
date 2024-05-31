@@ -390,6 +390,9 @@ nav {
     margin-right: auto;
     margin-left: auto;
   }
+  .grill {
+    display: none !important;
+  }
 }
 
 .carousel-container {
