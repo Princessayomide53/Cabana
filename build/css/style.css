@@ -1138,6 +1138,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1777,7 +1781,17 @@ video {
 
 body {
   font-family: 'kumbh sans', 'Satoshi-Regular', 'sans serif';
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
 
 .lh-tight {
@@ -2265,7 +2279,7 @@ nav > ul > li a img {
       rgb(86 74 74 / 50%) 100%
     ),
     url('../images/header-bg.png');
-  background-size: cover;
+  /* background-size: contain; */
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -2913,10 +2927,6 @@ nav li a:hover::after {
     display: none;
   }
 
-  .md\:h-\[11rem\] {
-    height: 11rem;
-  }
-
   .md\:h-\[153\.796px\] {
     height: 153.796px;
   }
@@ -2925,12 +2935,12 @@ nav li a:hover::after {
     height: 180px;
   }
 
-  .md\:h-\[20px\] {
-    height: 20px;
+  .md\:h-\[200px\] {
+    height: 200px;
   }
 
-  .md\:h-\[220px\] {
-    height: 220px;
+  .md\:h-\[20px\] {
+    height: 20px;
   }
 
   .md\:h-\[25px\] {
@@ -2997,36 +3007,16 @@ nav li a:hover::after {
     height: 80px;
   }
 
+  .md\:h-\[9\.7rem\] {
+    height: 9.7rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
 
   .md\:h-full {
     height: 100%;
-  }
-
-  .md\:h-\[9rem\] {
-    height: 9rem;
-  }
-
-  .md\:h-\[9\.5rem\] {
-    height: 9.5rem;
-  }
-
-  .md\:h-\[9\.7rem\] {
-    height: 9.7rem;
-  }
-
-  .md\:h-\[210px\] {
-    height: 210px;
-  }
-
-  .md\:h-\[205px\] {
-    height: 205px;
-  }
-
-  .md\:h-\[200px\] {
-    height: 200px;
   }
 
   .md\:w-\[120px\] {
@@ -3300,12 +3290,12 @@ nav li a:hover::after {
     padding-top: 80px;
   }
 
-  .md\:text-\[12\.2px\] {
-    font-size: 12.2px;
+  .md\:text-\[11px\] {
+    font-size: 11px;
   }
 
-  .md\:text-\[12px\] {
-    font-size: 12px;
+  .md\:text-\[12\.2px\] {
+    font-size: 12.2px;
   }
 
   .md\:text-\[13px\] {
@@ -3347,10 +3337,6 @@ nav li a:hover::after {
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .md\:text-\[11px\] {
-    font-size: 11px;
   }
 
   .md\:leading-\[28\.5px\] {

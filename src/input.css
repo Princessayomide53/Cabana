@@ -107,9 +107,18 @@
 
 body {
   font-family: 'kumbh sans', 'Satoshi-Regular', 'sans serif';
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+    overflow-y: auto;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
 .lh-tight {
   line-height: 6.3rem;
 }
@@ -556,7 +565,8 @@ nav > ul > li a img {
       rgb(86 74 74 / 50%) 100%
     ),
     url('../images/header-bg.png');
-  background-size: cover;
+  
+  /* background-size: contain; */
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: bottom;
