@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header style="min-height: 10%" class="sticky top-0 z-10">
+      <nav class="flex-1 relative">
+        <span
+          class="flex justify-between mac:max-w-[83rem] md:max-w-[45rem] xl:max-w-[75rem] lg:max-w-[60rem] mx-auto"
+        >
+          <a href="index.html">
+            <img
+              src="images/logo.png"
+              alt=""
+              class="py-[10px] hidden md:flex md:w-[120px] md:h-[62px] lg:w-[180px] lg:h-[69px]"
+            />
+          </a>
+          <ul
+            class="hidden md:grid md:gap-[1.5rem] lg:gap-[4rem] xl:gap-[6rem] mac:gap-[8rem] grid-cols-4 grid-rows-1 overflow-hidden place-items-center text-center text-white uppercase"
+          >
+            <li class="">
+              <a class="" href="about.html">about</a>
+            </li>
+            <li class="">
+              <a href="gallery.html">gallery</a>
+            </li>
+
+            <li>
+              <a href="menu.html"> menu </a>
+            </li>
+            <li>
+              <a href="contact.html"> contact</a>
+            </li>
+          </ul>
+
+          <div class="justify-center items-center hidden md:flex">
+            <button
+              class="rounded-full text-white px-7 py-2 flex justify-self-center bg-cabana-orange"
+            >
+              Book Now
+            </button>
+          </div>
+        </span>
+        <!-- <ul
+        class="hidden md:grid grid-cols-5 grid-rows-1 overflow-hidden text-center text-white uppercase"
+      >
+        <li class="">
+          <a class="" href="/about.html">about</a>
+        </li>
+        <li class="">
+          <a href="gallery.html">gallery</a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img src="images/logo.png" height="69px" width="219px" alt="" />
+          </a>
+        </li>
+
+        <li>
+          <a href="/menu.html"> menu </a>
+        </li>
+        <li>
+          <a href="contact.html"> contact</a>
+        </li>
+      </ul> -->
+        <!-- mobile menu -->
+        <ul class="flex justify-between md:hidden">
+          <li class="">
+            <a href="index.html">
+              <img src="images/logo.png" height="69px" width="219px" alt="" />
+            </a>
+          </li>
+
+          <button
+            class="mr-4"
+            id="openMenuButton"
+            class="text-gray-300 hover:bg-black hover:text-yellow-500 rounded-full"
+          >
+            <span id="mobile-open" class="mobile-open">
+              <img src="./images/hamburger.png" width="30" />
+            </span>
+
+            <span id="mobile-close" class="mobile-close">
+              <img src="./images/close.png" width="30" />
+            </span>
+          </button>
+        </ul>
+        <div
+          id="mobile-menu-list"
+          class="mobile-menu-list md:hidden absolute text-3xl bg-[#03b9c5] w-full z-10 flex items-center origin-start h-[100vh] justify-center center overflow-hidden"
+        >
+          <ul
+            class="flex flex-col justify-center items-center text-white uppercase animate-open-menu w-full h-full"
+          >
+            <li class="">
+              <a class="" href="about.html">about</a>
+            </li>
+            <li class="">
+              <a href="gallery.html">gallery</a>
+            </li>
+            <li>
+              <a href="menu.html"> menu </a>
+            </li>
+            <li>
+              <a href="contact.html"> contact</a>
+            </li>
+            <li>
+              <a href="contact.html"> book now</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+<main class="bg-[#E7FEFF] overflow-y-scroll h-screen overflow-x-hidden">
+    <section class="top-section2 md:hidden relative">
+        <div class="relative">
+            <img src="./images/drink-small.svg" alt="grillin-drink" class="absolute about-1 top-1" />
+            <span
+                class="text-[#003362] uppercase text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] leading-normal font-bold">FAQ</span>
+            <img src="./images/ticket-small.svg" alt="grillin-ticket" class="absolute about-2 top-1" />
+            <p
+                class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg">
+                Lorem ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+                cursus eu Lorem<br class="hidden md:block" />
+                ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+                cursus eu donec.
+            </p>
+        </div>
+    </section>
+    <!-- large -->
+    <section class="top-section hidden md:block relative">
+        <span class="wave-top">
+            <img src="./images/waves.png" alt="waves" class="   " />
+        </span>
+
+        <!-- small screen -->
+        <div class="relative pt-7  md:hidden md:pt-12 mac:pt-16 pb-[56px] md:pb-[95px]">
+            <img src="./images/drink-small.svg" alt="grillin-drink"
+                class="absolute top-2 frequent-1 md:left-[6rem] lg:left-[7.8rem] md:top-10 xl:left-[12rem] xl:top-12" />
+            <p class='text-2xl leading-normal text-[#003362] md:hidden uppercase font-bold'>Frequently <br />asked questions</p>
+            <span
+                class="text-[#003362] uppercase hidden md:block leading-[20px]  text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] md:leading-normal font-bold">Frequently
+                asked questions</span>
+            <img src="./images/ticket-small.svg" alt="grillin-ticket"
+                class="absolute  top-2 frequent-2 md:right-[6rem] lg:right-[7.9rem] md:top-10 xl:right-[12.2rem] xl:top-12" />
+            <p
+                class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg">
+                Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+                condimentum cursus eu Lorem<br class="hidden md:block" />
+                ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+                cursus eu donec.
+            </p>
+        </div>
+
+        <!-- large screen -->
+        <div class="relative pt-7 hidden md:block md:pt-12 mac:pt-16 pb-[56px] md:pb-[95px]">
+            <img src="./images/drink-small.svg" alt="grillin-drink"
+                class="absolute  top-2 grill lg:block md:left-[6rem] lg:left-[7.4rem] md:top-10 xl:left-[12rem] xl:top-12" />
+            <p class='text-2xl leading-normal text-[#003362] md:hidden uppercase font-bold'>Frequently <br />asked questions</p>
+            <span
+                class="text-[#003362] uppercase hidden md:block leading-[20px]  text-2xl mt-7 md:mt-0 md:text-[28px] lg:text-[32px] xl:text-[40px] md:leading-normal font-bold">Frequently
+                asked questions</span>
+            <img src="./images/ticket-small.svg" alt="grillin-ticket"
+                class="absolute  top-2 grill lg:block md:right-[6rem] lg:right-[7.5rem] md:top-10 xl:right-[12.2rem] xl:top-12" />
+            <p
+                class="text-[#293D4E] customs mt-2 px-3 md:px-0 md:mt-3 text-center font-medium leading-normal text-sm lg:text-lg">
+                Lorem ipsum dolor sit amet consectetur. Etiam massa cras
+                condimentum cursus eu Lorem<br class="hidden md:block" />
+                ipsum dolor sit amet consectetur. Etiam massa cras condimentum
+                cursus eu donec.
+            </p>
+        </div>
+    </section>
+    <div
+        class="mac:max-w-[80rem] story customs xl:max-w-[70rem] max-w-[20.8rem] lg:max-w-[58rem] md:max-w-[43rem] mx-auto text-sm leading-[28px] md:text-[13px] text-[#003362] lg:text-[15px] xl:text-[17px] mac:text-lg pb-[34px] font-normal md:leading-[39px]">
+        
+        <article class='faq-item mb-3'>
+            <div onclick="toggleFaq(this)"
+                class="h-[75px] faq-question cursor-pointer bg-white flex justify-between items-center w-full px-[20px] md:px-[34px] py-[15px] md:py-[24px] rounded-md shadow-md shadow-[rgba(0, 0, 0, 0.06)]">
+                <p class="text-left text-sm leading-normal md:text-base lg:text-xl">
+                    Lorem ipsum dolor sit amet consectetur.<br class='md:hidden' /> Etiam massa cras condimentum
+                </p>
+                <img src="./images/+.png" alt="" class="md:w-[20px] icon w-[17px] h-[17px] md:h-[20px]" />
+            </div>
+            <div class='bg-white hidden faq-answer p-[10px] md:p-[15px] flex-grow shadow-[rgba(0, 0, 0, 0.06)]'>
+                <p
+                    class='xl:text-lg hidden md:flex lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>
+                    Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus
+                    semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id turpis ipsum
+                    egestas ullamcorper consectetur. Ultrices purus urna purus consectetur elementum. Fermentum id urna posuere
+                    euismod varius urna id vel. Leo facilisis dis dign</p>
+                <p
+                    class='xl:text-lg flex md:hidden lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>
+                    Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus
+                    semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id</p>
+            </div>
+        </article>
+        <article class='faq-item mb-3'>
+            <div onclick="toggleFaq(this)"
+                class="h-[75px] faq-question cursor-pointer bg-white flex justify-between items-center w-full px-[20px] md:px-[34px] py-[15px] md:py-[24px] rounded-md shadow-md shadow-[rgba(0, 0, 0, 0.06)]">
+                <p class="text-left text-sm leading-normal md:text-base lg:text-xl">
+                    Lorem ipsum dolor sit amet consectetur.<br class='md:hidden' /> Etiam massa cras condimentum
+                </p>
+                <img src="./images/+.png" alt="" class="md:w-[20px] icon w-[17px] h-[17px] md:h-[20px]" />
+            </div>
+            <div class='bg-white hidden faq-answer p-[10px] md:p-[15px] flex-grow shadow-[rgba(0, 0, 0, 0.06)]'>
+                <p
+                    class='xl:text-lg hidden md:flex lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>
+                    Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus
+                    semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id turpis ipsum
+                    egestas ullamcorper consectetur. Ultrices purus urna purus consectetur elementum. Fermentum id urna posuere
+                    euismod varius urna id vel. Leo facilisis dis dign</p>
+                <p
+                    class='xl:text-lg flex md:hidden lg:text-base text-[13px] md:text-[14px] text-left leading-[28px] lg:leading-[39px]'>
+                    Lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque vulputate odio vulputate tempor faucibus
+                    semper. Orci id consequat enim tellus mi sociis mattis varius aliquet. Montes in interdum id</p>
+        </article>
+       
+    </div>
+   
+</main>
+    
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
