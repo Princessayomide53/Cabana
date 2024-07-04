@@ -178,8 +178,8 @@ dots.forEach((dot, index) => {
 showSlide(currentIndex);
 
 // Event listeners for previous and next buttons
-document.querySelector('.prev-button').addEventListener('click', prevSlide);
-document.querySelector('.next-button').addEventListener('click', nextSlide);
+document.querySelector('.prev-button')?.addEventListener('click', prevSlide);
+document.querySelector('.next-button')?.addEventListener('click', nextSlide);
 
 // frequent questions
 // script.js

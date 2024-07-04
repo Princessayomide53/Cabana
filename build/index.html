@@ -8,6 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <link href="./css/dimbox.min.css" rel="stylesheet" />
+   
     <link href="./css/style.css" rel="stylesheet" />
   </head>
 
@@ -649,18 +651,30 @@
         <div
           class="xl:flex hidden justify-center items-center gap-[30px] h-[40rem] bg-[#E7FEFF] pt-[10px]"
         >
-          <img src="./images/R1.png" alt="" class="h-[271.151px]" />
+
+   
+
+        <a href="images/R1.png" data-dimbox="image-1" class="h-[271.151px]" >
+          <img src="images/R1.png" alt="" class="h-[271.151px]" />
+          </a>
           <span class="flex-col flex justify-center items-center">
             <span class="flex gap-x-[20px] gap-y-[32px] items-center">
               <img src="./images/R3.png" alt="" class="" />
               <img src="./images/R4.png" alt="" class="h-[168px]"
             /></span>
             <span class="flex gap-[20px] items-center">
+                <a href="images/R6.png" data-dimbox="image-1" class="h-[271.151px]">
               <img src="./images/R6.png" alt="" />
-              <img src="./images/R5.png" alt=""
-            /></span>
+              </a>
+              <a href="images/R5.png" data-dimbox="image-1" class="h-[271.151px]">
+              <img src="./images/R5.png" alt="" />
+              </a>
+          
           </span>
+          </span>
+          <a href="images/R2.png" data-dimbox="image-1" class="h-[271.151px]">
           <img src="./images/R2.png" alt="" class="h-[299px]" />
+          </a>
         </div>
         <div
           class="xl:hidden mt-5 lg:-mt-12 md:flex  hidden justify-center items-center gap-y-[50px] md:h-[35rem] lg:h-[30rem] bg-[#E7FEFF] pt-[10px]"
@@ -674,7 +688,8 @@
             <span class="flex gap-12 lg:gap-[20px] items-center">
               <img src="./images/R6s.png" alt="" />
               <img src="./images/R5s.png" alt=""
-            /></span><span class='lg:hidden flex gap-12 justify-center items-center'>
+            /></span>
+            <span class='lg:hidden flex gap-12 justify-center items-center'>
           <img src="./images/R1s.png" alt="" class=" lg:hidden flex" />
           <img src="./images/R2s.png" alt="" class="" />
 
@@ -1548,5 +1563,7 @@
       // const swup = new Swup();
     </script>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/dimbox.min.js"></script>
+
   </body>
 </html>
